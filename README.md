@@ -1,4 +1,4 @@
-# Predicting New York Housing Market
+# Classifying time periods into high or low crime rates based on historical incident reports
 
 Authors: Cassandra Zhang, Ethan Kenny, James He, Pragya Singhal
 
