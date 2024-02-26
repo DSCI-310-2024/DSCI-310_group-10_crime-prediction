@@ -22,6 +22,7 @@ List of Dependencies:
 - **Matplotlib**: `pip install matplotlib`
 - **Seaborn**: `pip install seaborn`
 - **Scikit-learn**: `pip install scikit-learn`
+- **Altair**: `pip install altair`
 
 Names of Licenses: \
 MIT License
