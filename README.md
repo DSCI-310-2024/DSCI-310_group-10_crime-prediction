@@ -1,4 +1,4 @@
-# Classifying time periods into high or low crime rates based on historical incident reports
+# Classifying time periods into high or low crime rates based on historical incident reports (specifically 2023)
 
 Authors: Cassandra Zhang, Ethan Kenny, James He, Pragya Singhal
 
