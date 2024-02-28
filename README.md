@@ -11,9 +11,9 @@ How to run:
 `git clone <repository-url>`
 3. Launch JupyterLab either through Git or terminal on your computer.
 
-4. Navigate to the directory where `time_period_crim.ipynb` is located.
+4. Navigate to the directory where `time_period_crime.ipynb` is located.
 
-5. Open the `time_period_crim.ipynb` file in JupyterLab to access the analysis and execute the code.
+5. Open the `time_period_crime.ipynb` file in JupyterLab to access the analysis and execute the code.
 
 
 List of Dependencies: 
