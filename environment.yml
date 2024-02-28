@@ -1,4 +1,4 @@
-name: my_environment
+name: group10_environment
 channels:
   - defaults
 dependencies:
