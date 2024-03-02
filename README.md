@@ -8,19 +8,21 @@ Law enforcement agencies worldwide prioritize crime prevention and public safety
 How to run:
 
 1. Clone the repository to your local machine using Git:
-`git clone <repository-url>`
-3. Launch JupyterLab either through Git or terminal on your computer.
+`git clone <https://github.com/DSCI-310-2024/DSCI310-group10-project.git>`
+2. Create and Activate the Conda Environment containing important dependencies:
+   `conda env create -f dsci.yml`
+    `conda activate group10_environment`
+4. Launch JupyterLab either through Git or terminal on your computer.
 
-4. Navigate to the directory where `time_period_crime.ipynb` is located.
+5. Navigate to the directory where `time_period_crime.ipynb` is located.
 
-5. Open the `time_period_crime.ipynb` file in JupyterLab to access the analysis and execute the code.
+6. Open the `time_period_crime.ipynb` file in JupyterLab to access the analysis and execute the code.
 
 
 List of Dependencies: 
 - **NumPy**: `pip install numpy`
 - **Pandas**: `pip install pandas`
 - **Matplotlib**: `pip install matplotlib`
-- **Seaborn**: `pip install seaborn`
 - **Scikit-learn**: `pip install scikit-learn`
 - **Altair**: `pip install altair`
 
