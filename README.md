@@ -14,7 +14,7 @@ How to run:
     `conda activate group10_environment`
 4. Launch JupyterLab either through Git or terminal on your computer.
 
-5. Navigate to the directory where `time_period_crime.ipynb` is located.
+5. Navigate to the root of the directory where `time_period_crime.ipynb` is located.
 
 6. Open the `time_period_crime.ipynb` file in JupyterLab to access the analysis and execute the code.
 
