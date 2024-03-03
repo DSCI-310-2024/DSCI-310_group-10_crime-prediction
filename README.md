@@ -10,7 +10,7 @@ How to run:
 1. Clone the repository to your local machine using Git:
 `git clone <https://github.com/DSCI-310-2024/DSCI310-group10-project.git>`
 2. Create and Activate the Conda Environment containing important dependencies:
-   `conda env create -f dsci.yml`
+   `conda env create -f environment.yml`
     `conda activate group10_environment`
 4. Launch JupyterLab either through Git or terminal on your computer.
 
