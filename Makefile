@@ -18,9 +18,28 @@ data/processed/data_processed.csv: src/script_processed.py
 
 # EDA visualizations (the script for initial visualization of the dataset)
 results/chart1.png: src/script_eda.py data/processed/processed_data.csv
-	python src/script_eda.py
-	--train=data/processed/processed_data.csv
+	python src/script_eda.py \
+	--train=data/processed/processed_data.csv \
 	--out_dir=results
 
-# Analysis (perform analysis, predicting on the processed data)
-results/processed_data.csv results/processed.rds
+# analysis (perform analysis, predicting on the processed data)
+results/processed.rds: src/script_analysis.py data/processed/processed_data.csv
+	python src/script_analysis.py \
+	--train=data/processed/processed_data.csv \
+	--out_dir=results
+
+# Final visualizations (visualizations of the analysis)
+results/chart2.png results/chart3.png: src/script_visual.py data/processed/processed_data.csv
+	python src/script_visual.py \
+	--train=data/processed/processed_data.csv \
+	--out_dir=results
+
+# render report
+doc/time_period_crime_report.md: doc/time_period_crime_report.Rmd doc/time_period_crime_refs.bib
+	python -e "rmarkdown::render('doc/time_period_crime_report.Rmd')"
+
+clean:
+	rm -rf data
+	rm -rf results
+	rm -rf doc/time_period_crime_report.md doc/time_period_crime_report.html
+
