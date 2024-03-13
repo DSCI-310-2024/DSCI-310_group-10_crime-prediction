@@ -29,7 +29,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@main
         with:
-          images: ekenny02/DSCI310-group10-project
+          images: DSCI310-group10-project
           tags: |
             type=raw, value={{sha}},enable=${{github.ref_type != 'tag' }}
             type=raw, value=latest
