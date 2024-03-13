@@ -1,7 +1,7 @@
 # time period crime dataset
 # date: 2024-03-12
 
-all: results/chart1.png results/chart2.png results/chart3.png
+all: results/chart1.png results/chart2.png results/chart3.png results/processed.rds doc/time_period_crime_report.md
 
 # download data
 data/raw/raw_data_file.csv: src/script_raw.py 
@@ -17,7 +17,7 @@ data/processed/data_processed.csv: src/script_processed.py
 	--out_file=data/processed/processed_data.csv
 
 # EDA visualizations (the script for initial visualization of the dataset)
-results/chart1.png: src/script_eda.py data/processed/processed_data.csv
+results/chart1.png results/chart2.png: src/script_eda.py data/processed/processed_data.csv
 	python src/script_eda.py \
 	--train=data/processed/processed_data.csv \
 	--out_dir=results
@@ -29,7 +29,7 @@ results/processed.rds: src/script_analysis.py data/processed/processed_data.csv
 	--out_dir=results
 
 # Final visualizations (visualizations of the analysis)
-results/chart2.png results/chart3.png: src/script_visual.py data/processed/processed_data.csv
+ results/chart3.png: src/script_visual.py data/processed/processed_data.csv
 	python src/script_visual.py \
 	--train=data/processed/processed_data.csv \
 	--out_dir=results
