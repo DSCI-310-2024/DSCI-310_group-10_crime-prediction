@@ -28,3 +28,26 @@ List of Dependencies:
 
 Names of Licenses: \
 MIT License
+
+
+## Makefile
+
+### Generating HTML Files
+
+To generate the files in HTML format, follow these steps:
+
+Open the terminal window, then navigate to the root directory of the project using the command.
+```
+cd DSCI310-group10-project
+```
+Once in the directory, execute the command.
+```
+make all
+```
+This will create `time_period_crime` as an HTML file. Additionally, it will generate the necessary plots and graphs.
+
+### Cleaning Up
+
+To remove all generated files and clean up the project directory, use the command `make clean`. This will target and remove processed data, charts, the final report, and any other generated files.
+
+
