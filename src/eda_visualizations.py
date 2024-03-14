@@ -10,14 +10,15 @@ def create_visualizations(input_path, output_path):
     data = pd.read_csv(input_path)
     
     # Perform data cleaning and preprocessing
-    visualizations = getVisualizations(data)
+    names, visualizations = getVisualizations(data)
 
     # Save visualizations to figures
-    for i in range(len(visualizations)):
-        visualizations[i].save(f'{output_path}/chart{i + 1}.png')
+    for i in range(len(names)):
+        visualizations[i].save(f'{output_path}/{names[i]}.png')
 
 def getVisualizations(data):
 
+    names = []
     visualizations = []
     
     # visualize the distribution of incidents records based on time period
@@ -26,8 +27,9 @@ def getVisualizations(data):
         y = alt.Y('count()', title = 'Count of Records')
         ).configure_axisX(
         labelAngle=45
-        ).properties(title='Chart 1: The distribution of Time Period')
+        ).properties(title='The distribution of Time Period')
 
+    names.append('time_period_plot')
     visualizations.append(time_period_dist)
 
     # visualize the incident records based on the time period and day of the week
@@ -37,12 +39,13 @@ def getVisualizations(data):
         ).properties(height = 150).facet(
         facet = alt.Facet('incident_day_of_week',title=None,
         ),
-        title = 'Chart 2: Incidents Records by Time Period & Day'
+        title = 'Incidents Records by Time Period & Day'
         )
 
+    names.append('records_by_time_and_day_plot')
     visualizations.append(day_time)
 
-    return visualizations
+    return names, visualizations
 
 
 if __name__ == '__main__':
