@@ -48,3 +48,32 @@ criminal_incident = ["Larceny - From Vehicle", "Vandalism", "Larceny Theft - Oth
 ## Data
 The data set is from the San Francisco Police Department's(SFPD) Incident Report Dataset. The original link to the website is as follows: *https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783/about_data.* This original data set contains incident reports from 2018 to the present, but the link downloading the data set provides data contains 2023-specific data. These incident reports are filled by self-reported members or by officers using SFPD's online reporting system. The data set contains 27 columns of useful information related to each specific incident, including date time, incident ID, etc . 
 
+## Data Preprocessing
+The original data taken from the source is messy and contains many columns that are irrelevant to our analysis, so during this proprocessing part, we firstly remove the columns that we will not use. We have only kept columns that will be used later, i.e. 'incident_datetime','incident_time','incident_day_of_week','incident_category','incident_subcategory','police_district.'
+
+We then extract the hour and minutes of the incidents from the "incident_time" column as we can use these information to differentiate the time periods. We create a column called "time_period" that categorize each incidents to a time period according to the previsouly identified hour and minutes. 
+
+Next, we created a column called "if_crime" to identify whether the incident is criminal or not based on our previous definition. This column is binary as 1 means "this incident is a criminal incident" and 0 means "this incident is not a criminal incident."
+
+Finally, we will keep the necessary columns like the following table:
+
+| incident_day_of_week | police_district | time_period | if_crime |
+|------:|:-----|---------|:------:|
+|   Monday  |  Out of SF  |    Night   |    0  |
+|  Wednesday  |  Mission |   Late Night   |   1  |
+|    Monday  |    Northern |     Morning   |     1  |
+
+We have also looked at the cardinality of our dataset, the unique value of each column, and realize that some columns in our dataset may show a class imbalance. This imbalance will be a weakness of our analysis.
+
+## Exploratory Data Analysis Visualizations
+
+![The Distribution of Time Period.](../visualizations/time_period_plot.png){#time-period-plot width=70%}
+
+The @time-period-plot depicts the distribution of incidents across different time periods, revealing a notable concentration of records in the afternoon. This observation suggests that a significant portion of incidents tend to occur during the afternoon hours.
+
+We then look into how time period and day of the week interactively affect the number of incidents by creating the next image.
+
+![Incidents Records by Day & Time Period](../visualizations/records_by_time_and_day_plot.png){#time-day width=70%}
+
+The @time-day illustrates that the highest number of incident records typically occurs on Thursday afternoons, which aligns with the previously presented graph. While, the lowest incidence of records is observed during Monday late nights. Notably, both Mondays and Tuesdays exhibit relatively low average incident records. In contrast, Thursdays consistently demonstrate the highest average number of crime records. These findings suggest distinct patterns in incident occurrences across different days of the week, with Thursdays standing out as particularly significant in terms of crime frequency.
+
