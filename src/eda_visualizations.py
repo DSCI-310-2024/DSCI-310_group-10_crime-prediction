@@ -1,6 +1,7 @@
 import pandas as pd
 import altair as alt
 import click
+import os
 
 @click.command()
 @click.argument('input_path', type=str)
@@ -9,17 +10,10 @@ def create_visualizations(input_path, output_path):
     # Read data from the input path
     data = pd.read_csv(input_path)
     
-    # Perform data cleaning and preprocessing
-    names, visualizations = getVisualizations(data)
+    # Save Visualizations
+    saveVisualizations(data, output_path)
 
-    # Save visualizations to figures
-    for i in range(len(names)):
-        visualizations[i].save(f'{output_path}/{names[i]}.png')
-
-def getVisualizations(data):
-
-    names = []
-    visualizations = []
+def saveVisualizations(data, output_path):
     
     # visualize the distribution of incidents records based on time period
     time_period_dist = alt.Chart(data).mark_bar().encode(
@@ -29,8 +23,7 @@ def getVisualizations(data):
         labelAngle=45
         ).properties(title='The distribution of Time Period')
 
-    names.append('time_period_plot')
-    visualizations.append(time_period_dist)
+    time_period_dist.save(output_path + '/time_period_plot.png')
 
     # visualize the incident records based on the time period and day of the week
     day_time = alt.Chart(data).mark_point().encode(
@@ -42,10 +35,7 @@ def getVisualizations(data):
         title = 'Incidents Records by Time Period & Day'
         )
 
-    names.append('records_by_time_and_day_plot')
-    visualizations.append(day_time)
-
-    return names, visualizations
+    day_time.save(output_path + '/records_by_time_and_day_plot.png')
 
 
 if __name__ == '__main__':
