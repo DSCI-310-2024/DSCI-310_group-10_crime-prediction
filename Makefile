@@ -3,6 +3,7 @@
 # date: 2024-03-12
 # example usage: make all
 
+# 'make all' will automatically create files targeted in all:
 all: data/raw/raw_data.csv \
 	data/processed/processed_data.csv \ 
 	results/time_period_plot.png \
@@ -51,6 +52,7 @@ results/records_by_time_and_day_plot.png \
 results/coefficients_of_lr_model_plot.png \
 	quarto render report/quarto_reports.qmd
 
+# 'make clean' will remove targeted files in clean:
 clean:
 	rm -f src
 	rm -f data/processed/cross_validation_results.csv \
