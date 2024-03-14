@@ -1,0 +1,50 @@
+---
+title: "Predict and Classify the Appearance of Criminal Incidents based on historical incident reports"
+author: "Group10"
+format: 
+    html:
+        toc: true
+        toc-depth: 2
+    pdf:
+        toc: true
+        toc-depth: 2
+bibliography: references.bib
+execute:
+    echo: false
+    warning: false
+editor: source
+---
+```{python}
+import pandas as pd
+from IPython.display import Markdown, display
+from tabulate import tabulate
+```
+
+## Summary
+This analysis tries to build a logistic regression model that can predict whether the incident happened will be a criminal incident or not from the incident's time period, day of the week, and the police district. The model is built upon the 2023 San Francisco Police Department.
+
+## Introduction
+Law enforcement agencies globally prioritize crime prevention and public safety. Effective policing requires strategically allocating resources to prevent crime and respond promptly to incidents (Perry et al., 2013). In the past, police departments have depended on experience and intuition to determine patrol schedules and allocate resources. Advancements in data analysis and predictive modeling allow law enforcement organizations to take a more data-driven strategy. Some magazines stated that usually, many police incidents take place during the day but more violent incidents happen at night [@crime_study].
+
+Therefore, this analysis seeks to investigate the correlation between crime rates and various periods of the day (morning, afternoon, evening, night, and late night) through the analysis of 2023 police reports in San Francisco. The goal is to recognize trends that may suggest if certain time periods are linked to increased or decreased crime rates [@crime_prevention]. This information could greatly improve police patrols by helping law enforcement organizations distribute resources wisely, promoting a proactive approach to crime prevention. 
+
+Comprehending the time-related patterns of criminal behavior is essential for creating specific treatments that can decrease crime rates and enhance community security [@crime_study]. This study aims to categorize time periods as having either high or low crime rates by utilizing 2023 police reports data. The goal is to provide a forecasting tool that can assist in decision-making for police patrol scheduling and resource allocation. This method has the capacity to enhance law enforcement activities and enhance public safety and security.
+
+Our research aims to connect conventional policing approaches with current, data-driven methodologies to offer practical insights that help improve the efficiency and efficacy of crime prevention efforts.
+
+**Research Question**: Given 2023 San Francisco police reports, can we predict likelihood of the criminal incidents based on time period, day of week, and police district?
+
+**Time Periods**:
+* Morning: 6:00am to 12:00pm
+* Afternoon: 12:01pm to 6:00pm
+* Evening: 6:01pm to 9:00pm
+* Night: 9:01pm to 12:00am
+* Late Night: 00:01am to 6:00am
+
+**Criminal Incidents**: We defined criminal incidents according to the incidents' subcategory. 
+
+criminal_incident = ["Larceny - From Vehicle", "Vandalism", "Larceny Theft - Other", "Motor Vehicle Theft", "Simple Assault", "Drug Violation", "Aggravated Assault", "Fraud", "Theft From Vehicle",           "Burglary - Other", "Weapons Offense", "Intimidation", "Warrant", "Larceny - Auto Parts",               "Other Offenses", "Larceny Theft - From Building", "Larceny Theft - Shoplifting", "Robbery - Other", "Burglary - Residential", "Robbery - Street", "Traffic Violation Arrest", "Robbery - Commercial", "Larceny Theft - Pickpocket", "Forgery And Counterfeiting", "Motor Vehicle Theft (Attempted)", "Burglary - Hot Prowl", "Prostitution", "Burglary - Commercial", "Disorderly Conduct","Arson",                           "Larceny Theft - Bicycle", "Embezzlement", "Extortion-Blackmail", "Sex Offense"]          
+
+## Data
+The data set is from the San Francisco Police Department's(SFPD) Incident Report Dataset. The original link to the website is as follows: *https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783/about_data.* This original data set contains incident reports from 2018 to the present, but the link downloading the data set provides data contains 2023-specific data. These incident reports are filled by self-reported members or by officers using SFPD's online reporting system. The data set contains 27 columns of useful information related to each specific incident, including date time, incident ID, etc . 
+
