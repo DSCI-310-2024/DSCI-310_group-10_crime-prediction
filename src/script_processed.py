@@ -9,10 +9,10 @@ def clean_and_process_data(input_path, output_path):
     raw_data = pd.read_csv(input_path)
     
     # Perform data cleaning and preprocessing
-    cleaned_data = preprocess_data(raw_data)
+    processed_data = preprocess_data(raw_data)
     
     # Save the cleaned data to the output path
-    cleaned_data.to_csv(output_path, index=False)
+    processed_data.to_csv(output_path, index=False)
 
 def preprocess_data(data):
     # Isolate necessary features
