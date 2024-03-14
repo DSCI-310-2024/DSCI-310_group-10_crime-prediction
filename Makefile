@@ -8,8 +8,8 @@ all: data/raw/raw_data.csv \
 	data/processed/processed_data.csv \ 
 	results/time_period_plot.png \
 	results/records_by_time_and_day_plot.png \ 
-	data/processed/cross_validation_results.csv \
-	data/processed/crime_coefficients.csv \
+	results/cross_validation_results.csv \
+	results/crime_coefficients.csv \
 	results/coefficients_of_lr_model_plot.png \
 	report/crime_report.html
 
@@ -33,13 +33,13 @@ results/time_period_plot.png results/records_by_time_and_day_plot.png: src/eda_v
 	--out_dir=results
 
 # analysis (perform analysis, predicting on the processed data)
-data/processed/cross_validation_results.csv data/processed/crime_coefficients.csv: src/analysis.py data/processed/processed_data.csv
+results/cross_validation_results.csv results/crime_coefficients.csv: src/analysis.py data/processed/processed_data.csv
 	python src/analysis.py \
 	--input=data/processed/processed_data.csv \
-	--out_file=data/processed/cross_validation_results.csv \ 
-	--out_file=data/processed/crime_coefficients.csv
+	--out_file=results/cross_validation_results.csv \ 
+	--out_file=results/crime_coefficients.csv
 
-# Final visualization (visualization of the analysis)
+# final visualization (visualization of the analysis)
 results/coefficients_of_lr_model_plot.png: src/analysis_visualization.py data/processed/processed_data.csv
 	python src/analysis_visualization.py \
 	--train=data/processed/processed_data.csv \
@@ -54,9 +54,9 @@ results/coefficients_of_lr_model_plot.png \
 
 # 'make clean' will remove targeted files in clean:
 clean:
-	rm -f src
-	rm -f data/processed/cross_validation_results.csv \
-	data/processed/crime_coefficients.csv \
+	rm -f data
+	rm -f results/cross_validation_results.csv \
+	results/crime_coefficients.csv \
 	rm -f results/time_period_plot.png \
 	results/records_by_time_and_day_plot.png \
 	results/coefficients_of_lr_model_plot.png
