@@ -5,9 +5,9 @@
 
 # 'make all' will automatically create files targeted in all:
 all: data/raw/raw_data.csv \
-	data/processed/processed_data.csv \ 
+	data/processed/processed_data.csv \
 	results/time_period_plot.png \
-	results/records_by_time_and_day_plot.png \ 
+	results/records_by_time_and_day_plot.png \
 	results/cross_validation_results.csv \
 	results/crime_coefficients.csv \
 	results/coefficients_of_lr_model_plot.png \
@@ -30,8 +30,8 @@ data/processed/processed_data.csv: src/script_processed.py data/raw/raw_data.csv
 # EDA visualizations (the script for initial visualization of the dataset)
 results/time_period_plot.png results/records_by_time_and_day_plot.png: src/eda_visualizations.py data/processed/processed_data.csv
 	python src/eda_visualizations.py \
-	--input_path=data/processed/processed_data.csv \
-	--output_path=results
+	data/processed/processed_data.csv \
+	results
 
 # analysis (perform analysis, predicting on the processed data)
 results/cross_validation_results.csv results/crime_coefficients.csv: src/analysis.py data/processed/processed_data.csv

@@ -1,0 +1,1001 @@
+incident_day_of_week,police_district,time_period,if_crime
+Monday,Out of SF,Night,0
+Wednesday,Mission,Late Night,1
+Monday,Out of SF,Afternoon,0
+Monday,Out of SF,Morning,0
+Tuesday,Out of SF,Evening,0
+Wednesday,Mission,Late Night,1
+Saturday,Central,Afternoon,1
+Monday,Central,Morning,1
+Saturday,Central,Afternoon,1
+Saturday,Park,Afternoon,1
+Monday,Central,Morning,1
+Monday,Central,Morning,0
+Thursday,Out of SF,Morning,1
+Thursday,Bayview,Afternoon,1
+Tuesday,Out of SF,Afternoon,0
+Thursday,Out of SF,Afternoon,0
+Thursday,Richmond,Night,1
+Monday,Central,Morning,1
+Saturday,Central,Afternoon,1
+Thursday,Out of SF,Evening,0
+Wednesday,Southern,Morning,1
+Thursday,Central,Evening,1
+Friday,Out of SF,Morning,1
+Tuesday,Central,Afternoon,0
+Thursday,Southern,Morning,1
+Sunday,Out of SF,Afternoon,0
+Friday,Central,Afternoon,1
+Saturday,Out of SF,Evening,0
+Tuesday,Richmond,Afternoon,1
+Saturday,Out of SF,Night,0
+Monday,Out of SF,Morning,0
+Thursday,Northern,Afternoon,1
+Thursday,Mission,Afternoon,0
+Tuesday,Northern,Afternoon,0
+Saturday,Mission,Night,1
+Monday,Out of SF,Morning,0
+Sunday,Out of SF,Afternoon,0
+Friday,Taraval,Morning,0
+Monday,Out of SF,Evening,0
+Tuesday,Central,Afternoon,1
+Friday,Southern,Afternoon,0
+Thursday,Tenderloin,Afternoon,0
+Wednesday,Out of SF,Afternoon,0
+Friday,Out of SF,Morning,0
+Tuesday,Central,Evening,0
+Monday,Central,Morning,0
+Wednesday,Mission,Evening,0
+Wednesday,Park,Morning,1
+Tuesday,Out of SF,Evening,0
+Wednesday,Out of SF,Afternoon,0
+Friday,Central,Afternoon,0
+Wednesday,Out of SF,Afternoon,1
+Monday,Out of SF,Evening,1
+Tuesday,Out of SF,Evening,0
+Wednesday,Richmond,Afternoon,1
+Tuesday,Out of SF,Afternoon,0
+Tuesday,Out of SF,Afternoon,0
+Sunday,Out of SF,Late Night,0
+Wednesday,Out of SF,Night,1
+Saturday,Central,Afternoon,1
+Sunday,Richmond,Night,1
+Sunday,Northern,Morning,0
+Tuesday,Southern,Evening,0
+Saturday,Richmond,Morning,1
+Thursday,Out of SF,Morning,0
+Saturday,Richmond,Late Night,1
+Saturday,Richmond,Morning,0
+Tuesday,Southern,Evening,1
+Monday,Out of SF,Evening,0
+Wednesday,Out of SF,Afternoon,0
+Wednesday,Mission,Night,1
+Friday,Out of SF,Afternoon,0
+Thursday,Out of SF,Evening,0
+Saturday,Out of SF,Morning,0
+Thursday,Out of SF,Morning,0
+Monday,Richmond,Night,1
+Tuesday,Out of SF,Night,0
+Tuesday,Out of SF,Afternoon,0
+Saturday,Richmond,Afternoon,1
+Saturday,Out of SF,Late Night,0
+Tuesday,Richmond,Afternoon,1
+Sunday,Park,Night,1
+Wednesday,Central,Morning,1
+Wednesday,Out of SF,Afternoon,1
+Wednesday,Out of SF,Night,0
+Thursday,Mission,Evening,1
+Monday,Out of SF,Afternoon,0
+Saturday,Bayview,Night,1
+Friday,Out of SF,Morning,1
+Friday,Out of SF,Morning,0
+Thursday,Central,Late Night,1
+Friday,Out of SF,Evening,0
+Friday,Mission,Morning,0
+Sunday,Out of SF,Morning,0
+Wednesday,Central,Evening,1
+Thursday,Out of SF,Afternoon,0
+Tuesday,Park,Afternoon,0
+Thursday,Out of SF,Afternoon,0
+Friday,Central,Night,0
+Friday,Out of SF,Afternoon,0
+Friday,Out of SF,Evening,0
+Tuesday,Bayview,Late Night,1
+Wednesday,Mission,Afternoon,1
+Wednesday,Park,Morning,0
+Monday,Park,Afternoon,1
+Thursday,Northern,Afternoon,1
+Sunday,Mission,Morning,1
+Sunday,Central,Morning,0
+Thursday,Southern,Afternoon,1
+Saturday,Mission,Afternoon,0
+Thursday,Southern,Night,1
+Sunday,Richmond,Evening,1
+Saturday,Southern,Evening,1
+Monday,Out of SF,Evening,0
+Monday,Out of SF,Morning,0
+Sunday,Out of SF,Afternoon,1
+Tuesday,Park,Evening,1
+Tuesday,Out of SF,Night,0
+Friday,Richmond,Afternoon,1
+Friday,Out of SF,Late Night,0
+Monday,Out of SF,Afternoon,0
+Thursday,Out of SF,Night,1
+Wednesday,Out of SF,Afternoon,0
+Tuesday,Southern,Morning,1
+Saturday,Southern,Evening,1
+Wednesday,Southern,Night,1
+Monday,Out of SF,Night,0
+Tuesday,Southern,Night,1
+Saturday,Out of SF,Morning,0
+Wednesday,Out of SF,Night,0
+Wednesday,Central,Morning,0
+Wednesday,Southern,Late Night,1
+Monday,Out of SF,Evening,0
+Tuesday,Park,Morning,0
+Sunday,Taraval,Evening,0
+Wednesday,Taraval,Night,1
+Monday,Southern,Evening,1
+Monday,Central,Morning,1
+Friday,Taraval,Morning,0
+Friday,Central,Evening,1
+Friday,Out of SF,Morning,1
+Thursday,Out of SF,Late Night,0
+Saturday,Out of SF,Morning,0
+Sunday,Tenderloin,Night,0
+Wednesday,Park,Afternoon,0
+Tuesday,Out of SF,Morning,0
+Wednesday,Out of SF,Morning,0
+Wednesday,Ingleside,Morning,1
+Saturday,Out of SF,Night,0
+Wednesday,Bayview,Afternoon,1
+Monday,Out of SF,Afternoon,0
+Wednesday,Ingleside,Afternoon,0
+Saturday,Central,Night,1
+Thursday,Out of SF,Afternoon,0
+Tuesday,Bayview,Afternoon,1
+Monday,Central,Night,1
+Sunday,Out of SF,Morning,0
+Wednesday,Taraval,Afternoon,1
+Wednesday,Out of SF,Afternoon,0
+Friday,Out of SF,Afternoon,0
+Friday,Southern,Late Night,1
+Thursday,Northern,Afternoon,1
+Thursday,Out of SF,Evening,0
+Monday,Park,Late Night,1
+Monday,Ingleside,Evening,1
+Tuesday,Out of SF,Evening,0
+Friday,Out of SF,Afternoon,0
+Tuesday,Out of SF,Afternoon,0
+Saturday,Richmond,Afternoon,0
+Sunday,Out of SF,Morning,0
+Friday,Park,Night,1
+Thursday,Central,Morning,1
+Friday,Out of SF,Afternoon,0
+Wednesday,Southern,Morning,0
+Wednesday,Out of SF,Evening,0
+Friday,Bayview,Evening,0
+Saturday,Southern,Late Night,0
+Sunday,Richmond,Afternoon,0
+Wednesday,Southern,Evening,1
+Friday,Out of SF,Morning,0
+Thursday,Northern,Evening,1
+Saturday,Taraval,Late Night,1
+Tuesday,Southern,Afternoon,0
+Friday,Out of SF,Morning,0
+Sunday,Southern,Morning,0
+Wednesday,Out of SF,Night,0
+Thursday,Southern,Evening,1
+Thursday,Out of SF,Night,0
+Saturday,Southern,Night,1
+Tuesday,Taraval,Afternoon,0
+Wednesday,Out of SF,Morning,0
+Monday,Southern,Evening,1
+Thursday,Mission,Afternoon,1
+Saturday,Northern,Evening,1
+Thursday,Out of SF,Evening,0
+Tuesday,Central,Evening,0
+Saturday,Out of SF,Morning,0
+Thursday,Richmond,Afternoon,1
+Wednesday,Out of SF,Morning,0
+Saturday,Park,Afternoon,1
+Monday,Richmond,Morning,1
+Sunday,Mission,Late Night,1
+Monday,Central,Morning,1
+Friday,Out of SF,Morning,0
+Sunday,Central,Afternoon,0
+Wednesday,Out of SF,Night,1
+Friday,Park,Morning,1
+Saturday,Central,Evening,1
+Thursday,Out of SF,Late Night,0
+Tuesday,Out of SF,Afternoon,0
+Monday,Out of SF,Night,1
+Saturday,Central,Morning,1
+Monday,Out of SF,Night,0
+Monday,Out of SF,Afternoon,0
+Saturday,Northern,Morning,0
+Thursday,Southern,Evening,0
+Sunday,Out of SF,Afternoon,0
+Tuesday,Central,Afternoon,1
+Wednesday,Park,Afternoon,1
+Thursday,Richmond,Evening,1
+Monday,Mission,Evening,0
+Wednesday,Mission,Morning,1
+Thursday,Out of SF,Late Night,0
+Friday,Central,Evening,1
+Saturday,Central,Night,1
+Friday,Central,Afternoon,1
+Monday,Out of SF,Morning,0
+Saturday,Central,Afternoon,1
+Sunday,Richmond,Afternoon,1
+Saturday,Central,Late Night,1
+Sunday,Out of SF,Late Night,0
+Wednesday,Northern,Afternoon,1
+Saturday,Out of SF,Afternoon,0
+Friday,Mission,Night,0
+Saturday,Northern,Late Night,0
+Monday,Taraval,Morning,1
+Friday,Northern,Morning,1
+Saturday,Out of SF,Morning,0
+Wednesday,Richmond,Night,0
+Friday,Park,Afternoon,1
+Sunday,Central,Evening,1
+Tuesday,Out of SF,Afternoon,0
+Sunday,Central,Night,1
+Sunday,Northern,Late Night,1
+Friday,Out of SF,Late Night,0
+Saturday,Mission,Night,1
+Saturday,Out of SF,Late Night,0
+Tuesday,Central,Evening,1
+Sunday,Out of SF,Morning,0
+Thursday,Park,Evening,1
+Friday,Park,Morning,1
+Monday,Central,Afternoon,1
+Wednesday,Central,Evening,1
+Sunday,Ingleside,Evening,1
+Sunday,Out of SF,Late Night,1
+Friday,Northern,Afternoon,1
+Wednesday,Out of SF,Morning,0
+Friday,Out of SF,Morning,0
+Sunday,Taraval,Night,1
+Wednesday,Ingleside,Afternoon,0
+Saturday,Park,Afternoon,1
+Sunday,Mission,Late Night,1
+Wednesday,Taraval,Night,1
+Tuesday,Mission,Afternoon,1
+Wednesday,Mission,Afternoon,0
+Sunday,Out of SF,Night,1
+Wednesday,Mission,Night,1
+Friday,Central,Afternoon,1
+Friday,Out of SF,Morning,0
+Friday,Out of SF,Morning,1
+Monday,Taraval,Afternoon,1
+Saturday,Taraval,Afternoon,1
+Monday,Central,Late Night,1
+Thursday,Richmond,Afternoon,1
+Friday,Taraval,Late Night,1
+Thursday,Central,Morning,0
+Monday,Mission,Evening,1
+Sunday,Taraval,Late Night,0
+Friday,Central,Afternoon,1
+Wednesday,Out of SF,Afternoon,0
+Saturday,Richmond,Afternoon,1
+Friday,Out of SF,Morning,1
+Monday,Southern,Evening,1
+Saturday,Tenderloin,Late Night,1
+Wednesday,Richmond,Evening,1
+Sunday,Out of SF,Late Night,0
+Sunday,Out of SF,Late Night,0
+Thursday,Park,Morning,0
+Friday,Out of SF,Night,0
+Thursday,Northern,Night,1
+Sunday,Out of SF,Morning,0
+Monday,Bayview,Afternoon,0
+Friday,Northern,Afternoon,1
+Saturday,Central,Afternoon,1
+Wednesday,Bayview,Night,0
+Tuesday,Out of SF,Afternoon,0
+Friday,Park,Afternoon,1
+Thursday,Central,Afternoon,1
+Friday,Out of SF,Afternoon,0
+Wednesday,Mission,Afternoon,1
+Sunday,Park,Late Night,1
+Friday,Central,Afternoon,1
+Friday,Northern,Afternoon,0
+Friday,Southern,Afternoon,1
+Monday,Tenderloin,Afternoon,1
+Tuesday,Out of SF,Morning,0
+Thursday,Out of SF,Afternoon,0
+Friday,Out of SF,Night,0
+Thursday,Out of SF,Afternoon,1
+Tuesday,Southern,Afternoon,0
+Thursday,Park,Afternoon,1
+Sunday,Central,Night,1
+Sunday,Southern,Afternoon,1
+Sunday,Bayview,Afternoon,0
+Saturday,Out of SF,Night,0
+Friday,Taraval,Late Night,1
+Tuesday,Central,Afternoon,1
+Wednesday,Central,Afternoon,1
+Thursday,Ingleside,Afternoon,1
+Wednesday,Central,Evening,1
+Tuesday,Central,Afternoon,1
+Monday,Northern,Afternoon,0
+Thursday,Central,Night,1
+Friday,Out of SF,Evening,1
+Wednesday,Park,Afternoon,1
+Tuesday,Central,Afternoon,1
+Wednesday,Central,Afternoon,1
+Sunday,Out of SF,Night,0
+Friday,Richmond,Evening,1
+Sunday,Ingleside,Morning,1
+Tuesday,Central,Afternoon,1
+Sunday,Central,Night,1
+Tuesday,Out of SF,Afternoon,0
+Thursday,Tenderloin,Morning,0
+Friday,Southern,Night,1
+Wednesday,Central,Evening,1
+Saturday,Park,Evening,1
+Thursday,Out of SF,Evening,0
+Friday,Out of SF,Afternoon,1
+Tuesday,Richmond,Evening,1
+Monday,Mission,Evening,1
+Friday,Park,Afternoon,1
+Sunday,Mission,Afternoon,0
+Friday,Central,Night,1
+Friday,Out of SF,Afternoon,1
+Thursday,Richmond,Morning,1
+Thursday,Richmond,Afternoon,1
+Monday,Out of SF,Morning,0
+Monday,Richmond,Afternoon,0
+Friday,Richmond,Afternoon,1
+Saturday,Northern,Morning,0
+Tuesday,Out of SF,Afternoon,0
+Friday,Park,Afternoon,1
+Friday,Central,Afternoon,1
+Friday,Park,Night,0
+Monday,Ingleside,Evening,0
+Tuesday,Out of SF,Morning,0
+Wednesday,Out of SF,Afternoon,0
+Friday,Central,Morning,1
+Wednesday,Bayview,Afternoon,1
+Wednesday,Central,Evening,1
+Thursday,Park,Night,0
+Thursday,Southern,Morning,1
+Friday,Out of SF,Afternoon,1
+Friday,Taraval,Morning,1
+Wednesday,Out of SF,Afternoon,0
+Sunday,Central,Morning,1
+Thursday,Mission,Night,1
+Sunday,Taraval,Afternoon,1
+Saturday,Taraval,Evening,1
+Thursday,Out of SF,Morning,0
+Friday,Park,Night,1
+Wednesday,Out of SF,Morning,1
+Friday,Southern,Morning,1
+Sunday,Richmond,Evening,1
+Tuesday,Central,Afternoon,0
+Wednesday,Northern,Morning,1
+Tuesday,Northern,Evening,1
+Tuesday,Richmond,Morning,1
+Wednesday,Out of SF,Night,0
+Wednesday,Out of SF,Night,1
+Tuesday,Out of SF,Morning,0
+Sunday,Southern,Evening,0
+Monday,Out of SF,Night,0
+Monday,Southern,Evening,1
+Sunday,Richmond,Afternoon,1
+Monday,Southern,Evening,1
+Wednesday,Ingleside,Morning,0
+Wednesday,Central,Afternoon,1
+Tuesday,Taraval,Afternoon,1
+Tuesday,Southern,Night,1
+Thursday,Northern,Evening,0
+Wednesday,Taraval,Late Night,1
+Saturday,Mission,Evening,1
+Monday,Central,Afternoon,1
+Wednesday,Out of SF,Morning,1
+Wednesday,Northern,Night,0
+Tuesday,Central,Afternoon,1
+Monday,Central,Evening,1
+Thursday,Out of SF,Night,1
+Wednesday,Southern,Afternoon,1
+Wednesday,Park,Afternoon,1
+Friday,Richmond,Morning,1
+Wednesday,Taraval,Afternoon,1
+Friday,Park,Morning,1
+Thursday,Taraval,Afternoon,1
+Tuesday,Out of SF,Late Night,0
+Friday,Southern,Evening,1
+Thursday,Northern,Afternoon,0
+Thursday,Out of SF,Night,0
+Sunday,Mission,Afternoon,1
+Friday,Central,Afternoon,1
+Wednesday,Park,Morning,1
+Sunday,Northern,Night,1
+Sunday,Northern,Night,0
+Monday,Out of SF,Morning,0
+Saturday,Out of SF,Afternoon,0
+Saturday,Mission,Afternoon,0
+Wednesday,Out of SF,Afternoon,1
+Tuesday,Out of SF,Afternoon,0
+Monday,Richmond,Afternoon,1
+Sunday,Out of SF,Morning,0
+Monday,Out of SF,Late Night,0
+Wednesday,Out of SF,Night,0
+Friday,Out of SF,Late Night,1
+Friday,Park,Morning,1
+Wednesday,Southern,Night,1
+Tuesday,Richmond,Afternoon,1
+Sunday,Tenderloin,Night,1
+Thursday,Mission,Morning,1
+Wednesday,Out of SF,Afternoon,0
+Sunday,Richmond,Afternoon,1
+Saturday,Southern,Evening,0
+Tuesday,Out of SF,Night,0
+Friday,Central,Morning,1
+Thursday,Ingleside,Afternoon,1
+Saturday,Out of SF,Late Night,0
+Wednesday,Park,Afternoon,1
+Friday,Out of SF,Afternoon,0
+Thursday,Mission,Afternoon,0
+Friday,Southern,Evening,1
+Thursday,Out of SF,Afternoon,0
+Saturday,Out of SF,Morning,1
+Wednesday,Out of SF,Late Night,0
+Thursday,Out of SF,Afternoon,0
+Tuesday,Mission,Evening,1
+Saturday,Mission,Night,0
+Thursday,Southern,Night,0
+Tuesday,Southern,Morning,1
+Wednesday,Mission,Night,1
+Wednesday,Mission,Afternoon,0
+Wednesday,Out of SF,Morning,0
+Saturday,Mission,Morning,0
+Monday,Out of SF,Afternoon,0
+Saturday,Bayview,Late Night,1
+Wednesday,Central,Evening,0
+Tuesday,Out of SF,Afternoon,1
+Monday,Central,Evening,0
+Wednesday,Park,Morning,1
+Friday,Central,Afternoon,1
+Friday,Out of SF,Morning,0
+Wednesday,Out of SF,Evening,0
+Thursday,Central,Morning,1
+Friday,Ingleside,Afternoon,1
+Monday,Out of SF,Evening,0
+Tuesday,Out of SF,Morning,0
+Friday,Mission,Afternoon,1
+Wednesday,Tenderloin,Morning,1
+Thursday,Park,Evening,1
+Saturday,Central,Evening,1
+Saturday,Out of SF,Evening,0
+Friday,Southern,Night,1
+Tuesday,Out of SF,Late Night,0
+Friday,Central,Evening,1
+Friday,Park,Morning,0
+Tuesday,Central,Evening,0
+Friday,Bayview,Evening,1
+Friday,Southern,Morning,1
+Wednesday,Out of SF,Morning,1
+Tuesday,Out of SF,Afternoon,1
+Friday,Richmond,Afternoon,1
+Thursday,Out of SF,Morning,0
+Monday,Northern,Night,0
+Wednesday,Mission,Afternoon,1
+Sunday,Northern,Evening,1
+Tuesday,Out of SF,Late Night,0
+Sunday,Out of SF,Late Night,0
+Thursday,Central,Evening,1
+Wednesday,Mission,Morning,1
+Saturday,Out of SF,Morning,0
+Saturday,Southern,Night,1
+Saturday,Park,Afternoon,1
+Tuesday,Mission,Night,1
+Friday,Central,Afternoon,1
+Thursday,Northern,Night,1
+Thursday,Out of SF,Afternoon,0
+Monday,Central,Afternoon,1
+Saturday,Central,Late Night,0
+Tuesday,Out of SF,Morning,0
+Monday,Park,Morning,1
+Saturday,Richmond,Afternoon,1
+Wednesday,Richmond,Morning,1
+Friday,Park,Night,1
+Sunday,Mission,Morning,1
+Saturday,Taraval,Late Night,1
+Saturday,Park,Night,1
+Tuesday,Out of SF,Afternoon,0
+Sunday,Taraval,Late Night,1
+Friday,Park,Afternoon,1
+Tuesday,Central,Afternoon,1
+Sunday,Northern,Afternoon,0
+Tuesday,Out of SF,Night,0
+Thursday,Central,Morning,1
+Wednesday,Central,Afternoon,1
+Saturday,Out of SF,Morning,0
+Saturday,Park,Afternoon,1
+Thursday,Out of SF,Afternoon,0
+Wednesday,Out of SF,Morning,0
+Friday,Richmond,Morning,1
+Wednesday,Taraval,Afternoon,1
+Monday,Out of SF,Late Night,0
+Tuesday,Out of SF,Night,0
+Sunday,Mission,Morning,1
+Tuesday,Out of SF,Afternoon,0
+Tuesday,Mission,Night,1
+Monday,Richmond,Afternoon,0
+Tuesday,Out of SF,Evening,0
+Tuesday,Mission,Morning,0
+Monday,Southern,Evening,1
+Saturday,Bayview,Afternoon,0
+Thursday,Southern,Afternoon,1
+Wednesday,Out of SF,Late Night,0
+Sunday,Southern,Morning,0
+Tuesday,Northern,Afternoon,1
+Tuesday,Out of SF,Afternoon,0
+Monday,Richmond,Morning,1
+Thursday,Southern,Afternoon,1
+Saturday,Park,Night,1
+Thursday,Out of SF,Afternoon,0
+Monday,Park,Evening,1
+Saturday,Richmond,Evening,1
+Saturday,Central,Evening,1
+Monday,Richmond,Afternoon,1
+Monday,Southern,Late Night,1
+Wednesday,Southern,Night,1
+Friday,Out of SF,Night,0
+Wednesday,Out of SF,Late Night,0
+Saturday,Central,Afternoon,1
+Friday,Out of SF,Morning,0
+Thursday,Out of SF,Late Night,0
+Sunday,Southern,Afternoon,0
+Friday,Bayview,Evening,1
+Sunday,Southern,Morning,1
+Saturday,Out of SF,Afternoon,1
+Tuesday,Out of SF,Afternoon,0
+Monday,Park,Afternoon,1
+Friday,Taraval,Morning,1
+Friday,Southern,Night,1
+Friday,Out of SF,Afternoon,1
+Monday,Out of SF,Late Night,0
+Monday,Southern,Afternoon,1
+Wednesday,Out of SF,Late Night,0
+Tuesday,Central,Evening,1
+Tuesday,Bayview,Night,0
+Friday,Mission,Afternoon,1
+Wednesday,Out of SF,Late Night,0
+Sunday,Southern,Evening,1
+Saturday,Southern,Afternoon,1
+Monday,Out of SF,Late Night,1
+Sunday,Park,Afternoon,1
+Saturday,Mission,Afternoon,1
+Friday,Bayview,Late Night,1
+Monday,Richmond,Morning,1
+Saturday,Out of SF,Afternoon,0
+Monday,Out of SF,Morning,1
+Thursday,Out of SF,Afternoon,0
+Tuesday,Out of SF,Afternoon,0
+Wednesday,Taraval,Morning,1
+Thursday,Central,Afternoon,1
+Saturday,Southern,Morning,0
+Sunday,Central,Evening,1
+Wednesday,Ingleside,Afternoon,1
+Wednesday,Out of SF,Evening,0
+Sunday,Mission,Afternoon,0
+Saturday,Tenderloin,Afternoon,0
+Wednesday,Mission,Evening,1
+Tuesday,Central,Afternoon,1
+Sunday,Out of SF,Afternoon,0
+Thursday,Mission,Evening,1
+Tuesday,Mission,Afternoon,1
+Thursday,Bayview,Afternoon,0
+Monday,Bayview,Night,0
+Tuesday,Taraval,Morning,1
+Tuesday,Park,Afternoon,1
+Friday,Taraval,Evening,1
+Monday,Northern,Afternoon,1
+Wednesday,Mission,Afternoon,1
+Sunday,Taraval,Afternoon,0
+Thursday,Out of SF,Evening,0
+Sunday,Out of SF,Afternoon,0
+Monday,Out of SF,Morning,0
+Sunday,Southern,Night,1
+Monday,Northern,Afternoon,1
+Thursday,Ingleside,Night,0
+Thursday,Out of SF,Evening,0
+Friday,Out of SF,Morning,0
+Wednesday,Central,Evening,1
+Tuesday,Out of SF,Night,1
+Tuesday,Out of SF,Afternoon,0
+Sunday,Bayview,Late Night,1
+Saturday,Out of SF,Night,1
+Thursday,Out of SF,Afternoon,0
+Wednesday,Southern,Evening,1
+Monday,Central,Evening,1
+Tuesday,Out of SF,Night,0
+Friday,Central,Late Night,1
+Monday,Out of SF,Afternoon,0
+Monday,Out of SF,Afternoon,0
+Saturday,Out of SF,Morning,0
+Thursday,Out of SF,Afternoon,0
+Monday,Out of SF,Afternoon,0
+Thursday,Bayview,Morning,1
+Tuesday,Southern,Morning,1
+Wednesday,Mission,Night,1
+Monday,Richmond,Morning,1
+Saturday,Central,Night,1
+Thursday,Central,Morning,1
+Saturday,Out of SF,Afternoon,0
+Tuesday,Mission,Night,1
+Wednesday,Northern,Afternoon,1
+Friday,Out of SF,Morning,0
+Thursday,Out of SF,Afternoon,0
+Friday,Southern,Night,1
+Tuesday,Central,Morning,1
+Friday,Richmond,Afternoon,1
+Friday,Northern,Late Night,0
+Sunday,Out of SF,Evening,1
+Tuesday,Out of SF,Morning,0
+Monday,Out of SF,Afternoon,0
+Thursday,Mission,Late Night,1
+Tuesday,Northern,Morning,1
+Monday,Southern,Late Night,1
+Friday,Central,Afternoon,1
+Sunday,Southern,Late Night,0
+Friday,Richmond,Morning,1
+Monday,Southern,Evening,1
+Tuesday,Out of SF,Afternoon,0
+Sunday,Southern,Afternoon,1
+Wednesday,Southern,Night,1
+Sunday,Out of SF,Morning,0
+Friday,Southern,Night,1
+Sunday,Out of SF,Morning,1
+Monday,Mission,Evening,1
+Saturday,Richmond,Afternoon,1
+Monday,Central,Morning,1
+Monday,Richmond,Afternoon,1
+Sunday,Out of SF,Afternoon,0
+Wednesday,Out of SF,Afternoon,1
+Monday,Mission,Morning,1
+Sunday,Out of SF,Morning,0
+Tuesday,Southern,Afternoon,0
+Wednesday,Out of SF,Afternoon,0
+Sunday,Mission,Morning,1
+Tuesday,Mission,Morning,0
+Saturday,Out of SF,Morning,0
+Thursday,Bayview,Afternoon,1
+Monday,Out of SF,Evening,0
+Monday,Mission,Afternoon,1
+Friday,Southern,Morning,1
+Saturday,Northern,Morning,0
+Wednesday,Central,Morning,1
+Sunday,Richmond,Morning,1
+Wednesday,Mission,Night,1
+Sunday,Taraval,Evening,1
+Friday,Central,Late Night,1
+Saturday,Central,Afternoon,1
+Saturday,Southern,Afternoon,1
+Sunday,Northern,Morning,1
+Tuesday,Ingleside,Night,1
+Friday,Central,Evening,1
+Tuesday,Out of SF,Afternoon,0
+Saturday,Central,Night,1
+Thursday,Taraval,Afternoon,0
+Sunday,Central,Late Night,0
+Thursday,Out of SF,Night,0
+Friday,Central,Afternoon,1
+Friday,Out of SF,Afternoon,0
+Thursday,Bayview,Afternoon,1
+Monday,Southern,Afternoon,0
+Tuesday,Out of SF,Afternoon,0
+Thursday,Mission,Morning,1
+Friday,Bayview,Night,1
+Wednesday,Out of SF,Morning,1
+Thursday,Out of SF,Morning,0
+Thursday,Out of SF,Morning,0
+Sunday,Southern,Afternoon,1
+Thursday,Central,Evening,1
+Friday,Mission,Afternoon,1
+Saturday,Out of SF,Afternoon,0
+Wednesday,Southern,Morning,1
+Wednesday,Mission,Evening,1
+Friday,Out of SF,Late Night,0
+Wednesday,Mission,Evening,1
+Tuesday,Northern,Evening,1
+Wednesday,Central,Afternoon,1
+Sunday,Bayview,Evening,1
+Wednesday,Out of SF,Morning,1
+Friday,Mission,Evening,1
+Friday,Richmond,Morning,0
+Friday,Bayview,Afternoon,1
+Friday,Park,Afternoon,0
+Saturday,Central,Late Night,1
+Wednesday,Central,Afternoon,1
+Thursday,Park,Morning,1
+Monday,Central,Morning,1
+Tuesday,Central,Morning,1
+Saturday,Bayview,Late Night,1
+Saturday,Central,Afternoon,1
+Sunday,Richmond,Afternoon,1
+Wednesday,Out of SF,Morning,0
+Monday,Out of SF,Late Night,0
+Sunday,Richmond,Afternoon,1
+Thursday,Out of SF,Late Night,0
+Wednesday,Ingleside,Evening,1
+Saturday,Out of SF,Afternoon,0
+Monday,Out of SF,Afternoon,0
+Saturday,Richmond,Evening,1
+Sunday,Out of SF,Morning,0
+Thursday,Central,Afternoon,1
+Saturday,Richmond,Afternoon,1
+Sunday,Northern,Afternoon,1
+Monday,Bayview,Late Night,1
+Tuesday,Bayview,Evening,1
+Thursday,Out of SF,Morning,1
+Thursday,Out of SF,Morning,1
+Friday,Mission,Late Night,1
+Tuesday,Out of SF,Afternoon,0
+Monday,Out of SF,Morning,0
+Monday,Central,Late Night,1
+Wednesday,Bayview,Afternoon,0
+Sunday,Out of SF,Late Night,0
+Wednesday,Central,Morning,1
+Sunday,Out of SF,Morning,0
+Saturday,Central,Evening,1
+Wednesday,Northern,Night,1
+Saturday,Northern,Night,0
+Sunday,Central,Afternoon,1
+Tuesday,Richmond,Afternoon,1
+Tuesday,Central,Afternoon,1
+Monday,Out of SF,Evening,0
+Sunday,Mission,Morning,1
+Thursday,Central,Morning,1
+Saturday,Mission,Night,1
+Friday,Mission,Morning,1
+Wednesday,Out of SF,Late Night,1
+Friday,Richmond,Evening,0
+Friday,Central,Evening,1
+Wednesday,Northern,Afternoon,0
+Thursday,Taraval,Late Night,1
+Friday,Central,Afternoon,1
+Saturday,Richmond,Night,0
+Thursday,Park,Afternoon,1
+Monday,Bayview,Morning,1
+Thursday,Taraval,Afternoon,1
+Monday,Mission,Afternoon,1
+Saturday,Northern,Night,1
+Wednesday,Taraval,Evening,0
+Sunday,Central,Evening,0
+Wednesday,Out of SF,Afternoon,1
+Monday,Out of SF,Late Night,0
+Sunday,Out of SF,Late Night,0
+Wednesday,Southern,Evening,0
+Thursday,Taraval,Morning,1
+Friday,Richmond,Night,1
+Friday,Richmond,Evening,1
+Thursday,Out of SF,Morning,1
+Monday,Out of SF,Morning,0
+Friday,Richmond,Evening,1
+Sunday,Central,Afternoon,1
+Saturday,Southern,Afternoon,1
+Friday,Out of SF,Afternoon,1
+Saturday,Southern,Morning,1
+Thursday,Out of SF,Late Night,0
+Monday,Out of SF,Morning,0
+Thursday,Central,Night,1
+Saturday,Northern,Night,1
+Wednesday,Central,Morning,1
+Wednesday,Central,Morning,1
+Thursday,Southern,Afternoon,0
+Sunday,Out of SF,Afternoon,0
+Saturday,Central,Afternoon,1
+Thursday,Out of SF,Afternoon,0
+Wednesday,Northern,Evening,1
+Saturday,Central,Afternoon,1
+Friday,Southern,Late Night,1
+Monday,Richmond,Morning,1
+Wednesday,Out of SF,Afternoon,0
+Friday,Out of SF,Morning,0
+Thursday,Out of SF,Morning,0
+Monday,Out of SF,Evening,0
+Thursday,Out of SF,Night,1
+Wednesday,Northern,Afternoon,1
+Tuesday,Out of SF,Late Night,0
+Thursday,Out of SF,Late Night,0
+Tuesday,Mission,Afternoon,1
+Tuesday,Richmond,Afternoon,1
+Friday,Central,Evening,1
+Friday,Mission,Night,1
+Thursday,Southern,Evening,1
+Friday,Out of SF,Morning,0
+Tuesday,Out of SF,Night,0
+Wednesday,Out of SF,Late Night,0
+Sunday,Out of SF,Afternoon,0
+Saturday,Southern,Afternoon,1
+Friday,Central,Night,0
+Sunday,Out of SF,Afternoon,0
+Monday,Out of SF,Night,0
+Sunday,Mission,Afternoon,1
+Tuesday,Out of SF,Evening,0
+Saturday,Out of SF,Afternoon,0
+Thursday,Bayview,Afternoon,0
+Saturday,Southern,Afternoon,1
+Friday,Central,Afternoon,1
+Wednesday,Out of SF,Morning,1
+Wednesday,Central,Morning,1
+Wednesday,Out of SF,Morning,0
+Wednesday,Central,Morning,1
+Tuesday,Out of SF,Evening,0
+Saturday,Richmond,Evening,1
+Sunday,Out of SF,Afternoon,0
+Tuesday,Richmond,Evening,1
+Friday,Central,Morning,0
+Friday,Southern,Afternoon,1
+Saturday,Southern,Night,1
+Wednesday,Central,Morning,1
+Sunday,Central,Afternoon,1
+Wednesday,Out of SF,Afternoon,1
+Sunday,Out of SF,Afternoon,0
+Sunday,Out of SF,Afternoon,1
+Thursday,Out of SF,Afternoon,0
+Wednesday,Mission,Morning,0
+Wednesday,Northern,Afternoon,1
+Friday,Out of SF,Afternoon,0
+Monday,Out of SF,Afternoon,1
+Friday,Out of SF,Afternoon,0
+Tuesday,Out of SF,Morning,0
+Friday,Mission,Evening,0
+Monday,Ingleside,Afternoon,1
+Monday,Richmond,Evening,1
+Saturday,Southern,Morning,1
+Wednesday,Out of SF,Late Night,0
+Thursday,Out of SF,Morning,0
+Monday,Central,Evening,1
+Friday,Richmond,Morning,1
+Friday,Out of SF,Morning,0
+Thursday,Richmond,Morning,1
+Saturday,Tenderloin,Late Night,0
+Wednesday,Out of SF,Night,0
+Wednesday,Out of SF,Morning,0
+Sunday,Central,Afternoon,1
+Saturday,Central,Evening,0
+Saturday,Mission,Night,1
+Tuesday,Out of SF,Afternoon,0
+Monday,Out of SF,Evening,0
+Thursday,Out of SF,Evening,0
+Sunday,Bayview,Evening,0
+Wednesday,Mission,Morning,1
+Saturday,Southern,Night,1
+Tuesday,Out of SF,Afternoon,0
+Sunday,Bayview,Evening,1
+Tuesday,Out of SF,Afternoon,0
+Monday,Ingleside,Evening,0
+Friday,Ingleside,Late Night,1
+Wednesday,Northern,Morning,1
+Monday,Richmond,Morning,1
+Saturday,Taraval,Late Night,1
+Friday,Central,Afternoon,1
+Saturday,Central,Afternoon,1
+Friday,Southern,Evening,1
+Sunday,Central,Afternoon,1
+Wednesday,Out of SF,Afternoon,1
+Monday,Central,Evening,1
+Sunday,Park,Morning,1
+Friday,Out of SF,Afternoon,0
+Saturday,Out of SF,Afternoon,1
+Wednesday,Central,Evening,1
+Thursday,Park,Evening,1
+Friday,Out of SF,Evening,1
+Friday,Northern,Evening,1
+Thursday,Out of SF,Morning,0
+Thursday,Southern,Afternoon,1
+Monday,Park,Afternoon,1
+Monday,Out of SF,Night,1
+Thursday,Northern,Afternoon,1
+Sunday,Northern,Night,1
+Thursday,Out of SF,Afternoon,1
+Wednesday,Out of SF,Afternoon,0
+Sunday,Out of SF,Morning,0
+Wednesday,Richmond,Night,1
+Friday,Mission,Morning,1
+Saturday,Out of SF,Evening,0
+Thursday,Out of SF,Morning,0
+Tuesday,Out of SF,Afternoon,0
+Wednesday,Mission,Afternoon,1
+Sunday,Out of SF,Morning,1
+Saturday,Out of SF,Afternoon,0
+Saturday,Out of SF,Afternoon,0
+Sunday,Northern,Afternoon,0
+Tuesday,Mission,Morning,0
+Monday,Southern,Evening,1
+Tuesday,Taraval,Afternoon,1
+Friday,Out of SF,Morning,0
+Tuesday,Richmond,Morning,1
+Saturday,Central,Evening,1
+Tuesday,Out of SF,Late Night,0
+Tuesday,Central,Morning,0
+Sunday,Northern,Afternoon,1
+Tuesday,Central,Late Night,1
+Friday,Central,Afternoon,1
+Saturday,Richmond,Evening,1
+Sunday,Southern,Afternoon,1
+Thursday,Central,Evening,1
+Friday,Out of SF,Morning,1
+Friday,Out of SF,Morning,1
+Monday,Central,Morning,1
+Saturday,Taraval,Late Night,1
+Wednesday,Richmond,Night,1
+Monday,Northern,Evening,0
+Wednesday,Out of SF,Afternoon,1
+Wednesday,Richmond,Morning,1
+Tuesday,Out of SF,Afternoon,0
+Saturday,Taraval,Night,1
+Tuesday,Central,Afternoon,1
+Wednesday,Southern,Morning,1
+Thursday,Park,Late Night,1
+Friday,Richmond,Morning,1
+Saturday,Out of SF,Evening,0
+Monday,Northern,Afternoon,1
+Monday,Park,Evening,1
+Tuesday,Out of SF,Afternoon,0
+Sunday,Out of SF,Morning,0
+Tuesday,Out of SF,Evening,0
+Thursday,Out of SF,Evening,0
+Thursday,Ingleside,Late Night,1
+Monday,Southern,Evening,1
+Saturday,Richmond,Late Night,1
+Monday,Southern,Afternoon,1
+Tuesday,Northern,Afternoon,0
+Tuesday,Out of SF,Afternoon,0
+Friday,Southern,Evening,1
+Monday,Southern,Morning,0
+Wednesday,Out of SF,Morning,0
+Monday,Ingleside,Evening,1
+Thursday,Out of SF,Afternoon,0
+Monday,Central,Afternoon,0
+Friday,Southern,Evening,1
+Saturday,Central,Afternoon,1
+Sunday,Out of SF,Afternoon,1
+Friday,Central,Evening,1
+Wednesday,Central,Afternoon,0
+Wednesday,Out of SF,Afternoon,0
+Sunday,Central,Morning,1
+Sunday,Taraval,Late Night,1
+Friday,Out of SF,Night,1
+Monday,Central,Afternoon,1
+Thursday,Out of SF,Night,0
+Friday,Central,Evening,1
+Sunday,Out of SF,Late Night,0
+Monday,Richmond,Morning,1
+Sunday,Out of SF,Night,0
+Wednesday,Out of SF,Afternoon,0
+Friday,Central,Afternoon,0
+Thursday,Out of SF,Afternoon,0
+Wednesday,Bayview,Afternoon,1
+Tuesday,Out of SF,Afternoon,0
+Friday,Taraval,Morning,1
+Sunday,Richmond,Afternoon,1
+Friday,Central,Afternoon,1
+Sunday,Bayview,Evening,1
+Saturday,Out of SF,Afternoon,0
+Wednesday,Out of SF,Morning,1
+Monday,Out of SF,Night,0
+Tuesday,Park,Late Night,1
+Wednesday,Out of SF,Night,0
+Tuesday,Out of SF,Afternoon,0
+Tuesday,Out of SF,Afternoon,0
+Friday,Northern,Morning,0
+Friday,Southern,Late Night,0
+Tuesday,Richmond,Late Night,1
+Friday,Northern,Evening,1
+Tuesday,Northern,Late Night,1
+Friday,Southern,Morning,1
+Thursday,Mission,Morning,1
+Monday,Mission,Afternoon,1
+Tuesday,Out of SF,Morning,0
+Wednesday,Central,Night,1
+Wednesday,Southern,Afternoon,1
+Friday,Southern,Night,0
+Thursday,Southern,Night,0
+Monday,Taraval,Night,1
