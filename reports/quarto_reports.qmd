@@ -77,3 +77,77 @@ We then look into how time period and day of the week interactively affect the n
 
 The @time-day illustrates that the highest number of incident records typically occurs on Thursday afternoons, which aligns with the previously presented graph. While, the lowest incidence of records is observed during Monday late nights. Notably, both Mondays and Tuesdays exhibit relatively low average incident records. In contrast, Thursdays consistently demonstrate the highest average number of crime records. These findings suggest distinct patterns in incident occurrences across different days of the week, with Thursdays standing out as particularly significant in terms of crime frequency.
 
+## Perform an Analysis
+
+Comparing the performance of a DummyClassifier to that of LogisticRegression reveals that LogisticRegression outperforms the DummyClassifier by predicting the most frequent class. However, there could be some improvements in our prediction accuracy for LogisticRegression.
+
+Baseline:
+- DummyClassifier: 0.6866666666666666
+
+Logistic Regression:
+- Fit Time: 0.046406
+- Score Time: 0.008037
+- Test Score: 0.710000
+- Train Score: 0.713214
+
+The list of coefficients value for each feature in the LogisticRegression model is as follows:
+
+| Feature                             | Coefficient |
+|-------------------------------------|-------------|
+| incident_day_of_week_Friday         | -0.302988   |
+| incident_day_of_week_Monday         | 0.273438    |
+| incident_day_of_week_Saturday       | 0.163577    |
+| incident_day_of_week_Sunday         | -0.405615   |
+| incident_day_of_week_Thursday       | -0.206586   |
+| incident_day_of_week_Tuesday        | 0.191724    |
+| incident_day_of_week_Wednesday      | 0.286455    |
+| police_district_Bayview             | 0.128220    |
+| police_district_Central             | 0.113785    |
+| police_district_Ingleside           | 0.026043    |
+| police_district_Mission             | 0.393686    |
+| police_district_Northern            | 0.227133    |
+| police_district_Out of SF           | -1.884091   |
+| police_district_Park                | 0.349156    |
+| police_district_Richmond            | 0.252232    |
+| police_district_Southern            | 0.084014    |
+| police_district_Taraval             | 0.277710    |
+| police_district_Tenderloin          | 0.032119    |
+| time_period_Afternoon               | -0.246137   |
+| time_period_Evening                 | 0.016536    |
+| time_period_Late Night              | 0.315404    |
+| time_period_Morning                 | 0.190566    |
+| time_period_Night                   | -0.276362   |
+
+The coefficients indicate the influence of each feature on predicting crime occurrences. Notably, the largest positive coefficient corresponds to 'police_district_Mission', suggesting its significant impact on predicting crime. Conversely, the smallest negative coefficient is associated with 'police_district_Out of SF', indicating its minimal impact on crime prediction.
+
+![Coefficents of Logistic Regression Model](../reports/coefficients_of_logistic_regression.png){#coefficents__logistic_plot width=70%}
+
+The @coefficents__logistic_plot illustrates the coefficients of the features in the Logistic Regression model.
+
+
+## Discussion
+
+### Summarize Findings
+
+Days of the Week: From the @coefficents__logistic_plot, Tuesday and Wednesday show positive coefficients, suggesting a slight increase in the likelihood of incidents on these days. Conversely, Sunday exhibits a significantly negative coefficient, indicating a lower likelihood of incidents.
+
+Police Districts: The 'Mission' and 'Park' districts display higher likelihoods of incidents with positive coefficients. In contrast, "Out of San Francisco" has a strongly negative coefficient, as expected due to its location outside the city's jurisdiction.
+
+Time Periods: The "Late Night" period has a positive coefficient, suggesting a higher likelihood of incidents during these hours. Conversely, "Afternoon" and "Night" have negative coefficients, indicating a lower likelihood of incidents.
+
+### Were These Findings Expected?
+
+The results align with common expectations, such as a higher probability of incidents during late-night hours, possibly due to reduced visibility and fewer individuals present. The substantial negative coefficient for instances labeled 'Out of SF' is reasonable and highlights the model's emphasis on geographical significance. The varied effects of different days of the week and police districts may indicate complex social and environmental factors influencing crime rates.
+
+### Impact of Findings
+
+Analyzing time and location trends of criminal episodes can aid in strategic planning for law enforcement by optimizing resource allocation and establishing focused preventative strategies. These insights can inform safety alerts and enhance community policing efforts.
+
+### Future Questions
+
+In-depth Examination of Districts: What factors contribute to higher occurrence probabilities in specific districts? Further exploration could consider socio-economic
+
+
+
+
+
