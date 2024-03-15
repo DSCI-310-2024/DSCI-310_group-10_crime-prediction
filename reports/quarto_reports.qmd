@@ -97,6 +97,7 @@ Dummy Classifier Score:{dummy_score}
 
 ### Logistic Regression:
 
+```{python}
 #| label: tbl-cross-validation
 #| tbl-cap: Cross-validation results for LogisticRegression
 
