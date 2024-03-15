@@ -11,8 +11,8 @@ all: data/raw/raw_data.csv \
 	results/cross_validation_results.csv \
 	results/crime_coefficients.csv \
 	results/coefficients_of_lr_model_plot.png \
-	report/crime_report.html
-	report/crime_report.pdf
+	reports/crime_report.html
+	reports/crime_report.pdf
 
 # download data
 data/raw/raw_data.csv: src/script_raw.py 
@@ -46,16 +46,16 @@ results/coefficients_of_lr_model_plot.png: src/analysis_visualization.py data/pr
 	--train=data/processed/processed_data.csv \
 	--out_dir=results
 
-# render report in html
-report/crime_report.html: results report/quarto_reports.qmd
+# render to html
+reports/crime_report.html: results reports/quarto_reports.qmd
 results/time_period_plot.png \
 results/records_by_time_and_day_plot.png \ 
 results/coefficients_of_lr_model_plot.png
-	quarto render report/quarto_reports.qmd --to html
+	quarto render reports/quarto_reports.qmd --to html
 
-# render report in pdf
-report/crime_report.pdf: results report/quarto_reports.qmd
-	quarto render report/qmd_example.qmd --to pdf
+# render to pdf
+reports/crime_report.pdf: results reports/quarto_reports.qmd
+	quarto render reports/qmd_example.qmd --to pdf
 
 # 'make clean' will remove targeted files in clean:
 clean:
@@ -65,6 +65,6 @@ clean:
 	rm -f results/time_period_plot.png \
 	results/records_by_time_and_day_plot.png \
 	results/coefficients_of_lr_model_plot.png
-	rm -rf report/crime_report.html
-	rm -rf report/crime_report.pdf
+	rm -rf reports/crime_report.html
+	rm -rf reports/crime_report.pdf
 
