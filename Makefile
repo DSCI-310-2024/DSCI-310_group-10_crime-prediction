@@ -36,15 +36,14 @@ results/time_period_plot.png results/records_by_time_and_day_plot.png: src/eda_v
 # analysis (perform analysis, predicting on the processed data)
 results/cross_validation_results.csv results/crime_coefficients.csv: src/analysis.py data/processed/processed_data.csv
 	python src/analysis.py \
-	--input_path=data/processed/processed_data.csv \
-	--output_path=results/cross_validation_results.csv \ 
-	--output_path=results/crime_coefficients.csv
+	data/processed/processed_data.csv \
+	results
 
 # final visualization (visualization of the analysis)
 results/coefficients_of_lr_model_plot.png: src/analysis_visualization.py results/crime_coefficients.csv
 	python src/analysis_visualization.py \
-	--input_path=results/crime_coefficients.csv \
-	--output_path=results
+	results/crime_coefficients.csv \
+	results
 
 # render to html
 reports/crime_report.html: results reports/quarto_reports.qmd
