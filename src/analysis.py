@@ -37,7 +37,6 @@ def perform_analysis(X, y, output_path):
     cv_results_lr = pd.DataFrame(pd.DataFrame(cross_validate(lr, X_train, y_train, return_train_score=True)).mean())
 
     #Save cross-validation results
-    dummy_results.to_csv(output_path + '/dummy_results_score', index=True)
     cv_results_lr.to_csv(output_path + '/cross_validation_results.csv', index=True)
 
     #Save coefficients
