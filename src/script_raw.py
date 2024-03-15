@@ -6,7 +6,7 @@ import click
 @click.argument('output_path', type=str)
 def main(input_path, output_path):
     # Read data from the input path
-    raw_data = pd.read_csv(input_path)
+    raw_data = pd.read_csv(input_path, parse_dates=['incident_datetime'])
     
     # Save the data to the output path
     raw_data.to_csv(output_path, index=False)
