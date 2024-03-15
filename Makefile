@@ -22,7 +22,7 @@ data/raw/raw_data.csv: src/script_raw.py
 	--output_path=data/raw/raw_data.csv
 
 # processed data (these are the transformed data, ready to use for analysis)
-data/processed/processed_data.csv: src/script_processed.py
+data/processed/processed_data.csv: src/script_processed.py raw/raw_data.csv
 	python src/script_processed.py \
 	--input_path=data/raw/raw_data.csv \
 	--output_path=data/processed/processed_data.csv
@@ -41,9 +41,9 @@ results/cross_validation_results.csv results/crime_coefficients.csv: src/analysi
 	--output_path=results/crime_coefficients.csv
 
 # final visualization (visualization of the analysis)
-results/coefficients_of_lr_model_plot.png: src/analysis_visualization.py data/processed/processed_data.csv
+results/coefficients_of_lr_model_plot.png: src/analysis_visualization.py results/crime_coefficients.csv
 	python src/analysis_visualization.py \
-	--input_path=data/processed/processed_data.csv \
+	--input_path=results/crime_coefficients.csv \
 	--output_path=results
 
 # render to html
