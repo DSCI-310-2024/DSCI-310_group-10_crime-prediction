@@ -67,13 +67,13 @@ We have also looked at the cardinality of our dataset, the unique value of each 
 
 ## Exploratory Data Analysis Visualizations
 
-![The Distribution of Time Period.](../visualizations/time_period_plot.png){#time-period-plot width=70%}
+![The Distribution of Time Period.](../reports/time_period_plot.png){#time-period-plot width=70%}
 
 The @time-period-plot depicts the distribution of incidents across different time periods, revealing a notable concentration of records in the afternoon. This observation suggests that a significant portion of incidents tend to occur during the afternoon hours.
 
 We then look into how time period and day of the week interactively affect the number of incidents by creating the next image.
 
-![Incidents Records by Day & Time Period](../visualizations/records_by_time_and_day_plot.png){#time-day width=70%}
+![Incidents Records by Day & Time Period](../reports/records_by_time_and_day_plot.png){#time-day width=70%}
 
 The @time-day illustrates that the highest number of incident records typically occurs on Thursday afternoons, which aligns with the previously presented graph. While, the lowest incidence of records is observed during Monday late nights. Notably, both Mondays and Tuesdays exhibit relatively low average incident records. In contrast, Thursdays consistently demonstrate the highest average number of crime records. These findings suggest distinct patterns in incident occurrences across different days of the week, with Thursdays standing out as particularly significant in terms of crime frequency.
 
