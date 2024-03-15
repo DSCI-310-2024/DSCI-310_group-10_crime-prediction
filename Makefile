@@ -11,7 +11,7 @@ all: data/raw/raw_data.csv \
 	results/cross_validation_results.csv \
 	results/crime_coefficients.csv \
 	results/coefficients_of_lr_model_plot.png \
-	reports/crime_report.html
+	reports/crime_report.html \
 	reports/crime_report.pdf
 
 # download data
@@ -65,6 +65,6 @@ clean:
 	rm -f results/time_period_plot.png \
 	results/records_by_time_and_day_plot.png \
 	results/coefficients_of_lr_model_plot.png
-	rm -rf reports/crime_report.html
-	rm -rf reports/crime_report.pdf
+	rm -rf reports/crime_report.html \
+	reports/crime_report.pdf
 
