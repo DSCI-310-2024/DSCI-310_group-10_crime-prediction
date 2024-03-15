@@ -12,7 +12,7 @@ bibliography: references.bib
 execute:
     echo: false
     warning: false
-editor: source
+
 ---
 ```{python}
 import pandas as pd
