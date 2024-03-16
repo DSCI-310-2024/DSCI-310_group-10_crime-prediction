@@ -34,7 +34,9 @@ def perform_analysis(X, y, output_path):
     lr.fit(X_train, y_train)
     
     # Evaluate the classifier
-    dummy_results = pd.DataFrame(pd.DataFrame(dummy.score(X_test, y_test)))
+    #dummy_results = pd.DataFrame([dummy.score(X_test, y_test)])
+    dummy_score = dummy.score(X_test, y_test)  
+    dummy_results = pd.DataFrame({'Score': [dummy_score]})
     cv_results_lr = pd.DataFrame(pd.DataFrame(cross_validate(lr, X_train, y_train, return_train_score=True)).mean())
 
     #Save cross-validation results
