@@ -35,6 +35,11 @@ List of Dependencies:
 - **Matplotlib**: `pip install matplotlib`
 - **Scikit-learn**: `pip install scikit-learn`
 - **Altair**: `pip install altair`
+- **Altair Saver**: `pip install altair_saver`
+- **Click**: `pip install click`
+- **Pytest**: `pip install pytest`
+- **Vl Convert**: `pip install vl-convert-python`
+- **Tabulate**: `pip install tabulate`
 
 Names of Licenses: \
 MIT License
