@@ -32,9 +32,9 @@ MIT License
 
 ## Makefile
 
-### Generating HTML Files
+### Generating HTML and PDF Files
 
-To generate the files in HTML format, follow these steps:
+To generate the files in HTML and PDF format, follow these steps:
 
 Open the terminal window, then navigate to the root directory of the project using the command.
 ```
@@ -44,7 +44,7 @@ Once in the directory, execute the command.
 ```
 make all
 ```
-This will create `time_period_crime` as an HTML file. Additionally, it will generate the necessary plots and graphs.
+This will create `time_period_crime` as an HTML and PDF file. Additionally, it will generate the necessary plots and graphs.
 
 ### Cleaning Up
 
