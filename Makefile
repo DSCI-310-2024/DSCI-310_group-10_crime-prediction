@@ -17,8 +17,8 @@ all: data/raw/raw_data.csv \
 # download data
 data/raw/raw_data.csv: src/script_raw.py 
 	python src/script_raw.py \
-	--input_path=https://data.sfgov.org/resource/wg3w-h783.csv \
-	--output_path=data/raw/raw_data.csv
+	https://data.sfgov.org/resource/wg3w-h783.csv \
+	data/raw/raw_data.csv
 
 
 # processed data (these are the transformed data, ready to use for analysis)
