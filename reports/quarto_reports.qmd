@@ -86,28 +86,11 @@ The @fig-time-day illustrates that the highest number of incident records typica
 ```{python}
 
 #| label: tbl-dummy-score
-#| tbl-cap: Dummy Classifier Score
+#| tbl-cap: Cross-validation results for DummyClassifier
 
 dummy_score = pd.read_csv("../results/dummy_results.csv")
-
-new_dummy_score = pd.DataFrame({
-    'Dummy Classifier': ['Dummy Score'],
-    'Score': [dummy_score['Score'][0]]
-})
-
-markdown_table = new_dummy_score.to_markdown(index=False)
-
-Markdown(markdown_table)
-
-#md = tabulate(dummy_score, headers='keys', tablefmt='pipe',showindex=False)
-
-#Markdown(dummy_score.to_markdown())
-
-# Markdown("""
-# Dummy Classifier Score:{dummy_score}
-# """.format
-#     (dummy_score=dummy_score['Dummy Score'][1]
-# ))
+dummy_results_md = dummy_score.to_markdown(index=False)
+Markdown(dummy_results_md)
 ```
 
 ### Logistic Regression:
@@ -116,32 +99,9 @@ Markdown(markdown_table)
 #| label: tbl-cross-validation
 #| tbl-cap: Cross-validation results for LogisticRegression
 
-cross_validation_results = pd.read_csv("../results/cross_validation_results.csv")
-
-markdown_text = """
-Logistic Regression:
-- Fit Time: {fit_time}
-- Score Time: {score_time}
-- Test Score: {test_score}
-- Train Score: {train_score}
-""".format(
-    fit_time=cross_validation_results['fit_time'][0],  
-    score_time=cross_validation_results['score_time'][0],  
-    test_score=cross_validation_results['test_score'][0],  
-    train_score=cross_validation_results['train_score'][0]  )
-
-# Markdown("""
-# Logistic Regression:
-# - Fit Time: {fit_time}
-# - Score Time: {score_time}
-# - Test Score: {test_score}
-# - Train Score: {train_score}
-# """.format(
-#     fit_time=cross_validation_results['Fit Time'][0],
-#     score_time=cross_validation_results['Score Time'][0],
-#     test_score=cross_validation_results['Test Score'][0],
-#     train_score=cross_validation_results['Train Score'][0]
-# ))
+cross_validation_results = pd.read_csv("../results/cross_validation_results.csv",index_col=False)
+markdown_table = cross_validation_results.to_markdown(index=False)
+Markdown(markdown_table)
 ```
 Comparing the performance of a DummyClassifier in @tbl-dummy-score to that of LogisticRegression in @tbl-cross-validation, reveals that LogisticRegression outperforms the DummyClassifier by predicting the most frequent class. However, there could be some improvements in our prediction accuracy for LogisticRegression.
 

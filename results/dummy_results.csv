@@ -1,3 +1,2 @@
-Dummy Classifier,Score
-Dummy Score,"      Score
-0  0.583333"
+Fit Time,Score Time,Test Score,Train Score
+0.00857844352722168,0.0005154609680175781,0.5800000000000001,0.5800000000000001

@@ -58,7 +58,8 @@ clean:
 	rm -rf data/raw/raw_data.csv
 	rm -rf data/processed/processed_data.csv
 	rm -rf results/cross_validation_results.csv \
-		results/crime_coefficients.csv
+		results/crime_coefficients.csv\
+		results/dummy_results.csv
 	rm -rf results/time_period_plot.png \
 		results/records_by_time_and_day_plot.png \
 		results/coefficients_of_lr_model_plot.png

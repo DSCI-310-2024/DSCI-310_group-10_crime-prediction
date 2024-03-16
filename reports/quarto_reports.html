@@ -202,25 +202,25 @@ Figure&nbsp;2: Incidents Records by Day &amp; Time Period
 <div id="tbl-dummy-score" class="cell quarto-float anchored" data-execution_count="2">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-dummy-score-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: Dummy Classifier Score
+Table&nbsp;1: Cross-validation results for DummyClassifier
 </figcaption>
 <div aria-describedby="tbl-dummy-score-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="10">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="18">
 <table class="do-not-create-environment cell table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th style="text-align: left;">Dummy Classifier</th>
-<th style="text-align: left;">Score</th>
+<th style="text-align: right;">Fit Time</th>
+<th style="text-align: right;">Score Time</th>
+<th style="text-align: right;">Test Score</th>
+<th style="text-align: right;">Train Score</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Dummy Score</td>
-<td style="text-align: left;">Score</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">0 0.583333</td>
+<td style="text-align: right;">0.00857844</td>
+<td style="text-align: right;">0.000515461</td>
+<td style="text-align: right;">0.58</td>
+<td style="text-align: right;">0.58</td>
 </tr>
 </tbody>
 </table>
@@ -239,34 +239,21 @@ Table&nbsp;1: Dummy Classifier Score
 Table&nbsp;2: Cross-validation results for LogisticRegression
 </figcaption>
 <div aria-describedby="tbl-cross-validation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="11">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="19">
 <table class="do-not-create-environment cell table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th style="text-align: right;"></th>
-<th style="text-align: left;">Unnamed: 0</th>
-<th style="text-align: right;">0</th>
+<th style="text-align: right;">Fit Time</th>
+<th style="text-align: right;">Score Time</th>
+<th style="text-align: right;">Test Score</th>
+<th style="text-align: right;">Train Score</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: right;">0</td>
-<td style="text-align: left;">fit_time</td>
-<td style="text-align: right;">0.0426968</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">score_time</td>
-<td style="text-align: right;">0.00240464</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">2</td>
-<td style="text-align: left;">test_score</td>
+<td style="text-align: right;">0.0699021</td>
+<td style="text-align: right;">0.00212359</td>
 <td style="text-align: right;">0.8</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">3</td>
-<td style="text-align: left;">train_score</td>
 <td style="text-align: right;">0.806786</td>
 </tr>
 </tbody>
@@ -284,7 +271,7 @@ Table&nbsp;2: Cross-validation results for LogisticRegression
 Table&nbsp;3: The list of coefficients value for each feature in the LogisticRegression model
 </figcaption>
 <div aria-describedby="tbl-coefficients-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="12">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="20">
 <table class="do-not-create-environment cell table table-sm table-striped small">
 <thead>
 <tr class="header">

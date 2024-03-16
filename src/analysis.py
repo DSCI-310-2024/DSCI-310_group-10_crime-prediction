@@ -34,16 +34,20 @@ def perform_analysis(X, y, output_path):
     lr.fit(X_train, y_train)
     
     # Evaluate the classifier
-    #dummy_results = pd.DataFrame([dummy.score(X_test, y_test)])
-    dummy_score = dummy.score(X_test, y_test)  
-    dummy_results = pd.DataFrame({'Score': [dummy_score]})
-    cv_results_lr = pd.DataFrame(pd.DataFrame(cross_validate(lr, X_train, y_train, return_train_score=True)).mean())
+    
+    dummy_results = pd.DataFrame(cross_validate(dummy, X_train, y_train, return_train_score=True)).mean().to_frame().T
+
+    dummy_results.columns = ['Fit Time', 'Score Time', 'Test Score', 'Train Score']
+    dummy_results.to_csv(output_path + '/dummy_results.csv', index=False)
+
+    cv_results_lr = pd.DataFrame(cross_validate(lr, X_train, y_train, return_train_score=True)).mean().to_frame().T
 
     #Save cross-validation results
-    cv_results_lr.to_csv(output_path + '/cross_validation_results.csv', index=True)
+    cv_results_lr.columns = ['Fit Time', 'Score Time', 'Test Score', 'Train Score']
+    cv_results_lr.to_csv(output_path + '/cross_validation_results.csv', index=False)
 
     #Save coefficients
-    saveDummyScore(dummy_results, output_path)
+    #saveDummyScore(dummy_results, output_path)
     saveCoefficients(X_train, lr, output_path)
 
 def saveCoefficients(X_train, lr, output_path):
@@ -52,11 +56,11 @@ def saveCoefficients(X_train, lr, output_path):
 
     viz_df.to_csv(output_path + '/crime_coefficients.csv', index=False)
 
-def saveDummyScore(dummy_results, output_path):
+# def saveDummyScore(dummy_results, output_path):
 
-    viz_dummy = pd.DataFrame({"Dummy Classifier": ["Dummy Score"], "Score": [dummy_results]})
+#     viz_dummy = pd.DataFrame({"Dummy Classifier": ["Dummy Score"], "Score": [dummy_results]})
 
-    viz_dummy.to_csv(output_path + '/dummy_results.csv', index=False)
+#     viz_dummy.to_csv(output_path + '/dummy_results.csv', index=False)
 
 
 if __name__ == '__main__':
