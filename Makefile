@@ -55,11 +55,12 @@ reports/crime_report.pdf: results reports/quarto_reports.qmd
 
 # 'make clean' will remove targeted files in clean:
 clean:
-	rm -f data
-	rm -f results/cross_validation_results.csv \
-	results/crime_coefficients.csv
-	rm -f results/time_period_plot.png \
-	results/records_by_time_and_day_plot.png \
-	results/coefficients_of_lr_model_plot.png
+	rm -rf data/raw/raw_data.csv
+	rm -rf data/processed/processed_data.csv
+	rm -rf results/cross_validation_results.csv \
+		results/crime_coefficients.csv
+	rm -rf results/time_period_plot.png \
+		results/records_by_time_and_day_plot.png \
+		results/coefficients_of_lr_model_plot.png
 	rm -rf reports/crime_report.html \
-	reports/crime_report.pdf
+		reports/crime_report.pdf
