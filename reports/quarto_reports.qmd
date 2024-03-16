@@ -129,6 +129,7 @@ Notably, the largest positive coefficient corresponds to 'police_district_Missio
 
 The @fig-coefficents-lr-plot illustrates the coefficients of the features in the Logistic Regression model.
 
+\newpage
 
 ## Discussion
 
@@ -150,8 +151,9 @@ Analyzing time and location trends of criminal episodes can aid in strategic pla
 
 ### Future Questions
 
-In-depth Examination of Districts: What factors contribute to higher occurrence probabilities in specific districts? Further exploration could consider socio-economic
-
+In-depth Examination of Districts: What factors contribute to greater occurrence probabilities in specific districts? Additional examination could take into account socio-economic variables, population density, or local event calendars.
+Temporal Dynamics: How do holidays and events at various periods of the year influence these patterns?
+Intervention Evaluation: Assessing the effectiveness of various policing measures in reducing risks at peak hours and in specific regions specified by the model.
 
 ## References
 
