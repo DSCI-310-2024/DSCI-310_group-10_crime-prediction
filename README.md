@@ -5,7 +5,7 @@ Authors: Cassandra Zhang, Ethan Kenny, James He, Pragya Singhal
 Short Summary: \
 Law enforcement agencies worldwide prioritize crime prevention and public safety, traditionally relying on experience and intuition for resource allocation. However, advancements in data analysis now enable a more data-driven approach. This analysis aims to predict the appearance of criminal incidents from time period, day of the week, and police district based on data from San Francisco 2023. Understanding time-related crime patterns can inform proactive policing strategies. By associating time periods, police districts, and days of the week with the appearance of criminal incidents, this study aims to provide a forecasting tool for police patrol scheduling and resource allocation, ultimately enhancing law enforcement activities and public safety.
 
-How to run:
+How to run (Virtual Machine):
 
 1. Clone the repository to your local machine using Git:
 `git clone <https://github.com/DSCI-310-2024/DSCI310-group10-project.git>`
@@ -18,6 +18,16 @@ How to run:
 
 6. Open the `time_period_crime.ipynb` file in JupyterLab to access the analysis and execute the code.
 
+How to run (Docker Container):
+
+1. Clone the repository to your local machine using Git:
+`git clone <https://github.com/DSCI-310-2024/DSCI310-group10-project.git>`
+
+2. Open terminal and navigate to DSCI310-group10-project directory
+
+3. Run `docker compose up` and click provided link to jupyter lab
+
+4. Necessary files found withing the `work` directory
 
 List of Dependencies: 
 - **NumPy**: `pip install numpy`
