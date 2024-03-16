@@ -21,7 +21,7 @@ def saveVisualizations(data, output_path):
         y = alt.Y('count()', title = 'Count of Records')
         ).configure_axisX(
         labelAngle=45
-        )#.properties(title='The distribution of Time Period')
+        ).properties(height = 150)
 
     time_period_dist.save(output_path + '/time_period_plot.png')
 

@@ -51,7 +51,7 @@ reports/crime_report.html: results reports/quarto_reports.qmd
 
 # render to pdf
 reports/crime_report.pdf: results reports/quarto_reports.qmd
-	quarto render reports/qmd_example.qmd --to pdf
+	quarto render reports/quarto_reports.qmd --to pdf
 
 # 'make clean' will remove targeted files in clean:
 clean:
@@ -62,5 +62,5 @@ clean:
 	rm -rf results/time_period_plot.png \
 		results/records_by_time_and_day_plot.png \
 		results/coefficients_of_lr_model_plot.png
-	rm -rf reports/crime_report.html \
-		reports/crime_report.pdf
+	rm -rf reports/quarto_reports.html \
+		reports/quarto_reports.pdf
