@@ -70,13 +70,13 @@ We have also looked at the cardinality of our dataset, the unique value of each 
 
 ![The Distribution of Time Period.](../results/time_period_plot.png){#fig-time-period-plot width=40%}
 
-The @fig-time-period-plot depicts the distribution of incidents across different time periods, revealing a notable concentration of records in the afternoon. This observation suggests that a significant portion of incidents tend to occur during the afternoon hours.
+@fig-time-period-plot depicts the distribution of incidents across different time periods, revealing a notable concentration of records in the afternoon. This observation suggests that a significant portion of incidents tend to occur during the afternoon hours.
 
 We then look into how time period and day of the week interactively affect the number of incidents by creating the next image.
 
 ![Incidents Records by Day & Time Period](../results/records_by_time_and_day_plot.png){#fig-time-day}
 
-The @fig-time-day illustrates that the highest number of incident records typically occurs on Thursday afternoons, which aligns with the previously presented graph. While, the lowest incidence of records is observed during Monday late nights. Notably, both Mondays and Tuesdays exhibit relatively low average incident records. In contrast, Thursdays consistently demonstrate the highest average number of crime records. These findings suggest distinct patterns in incident occurrences across different days of the week, with Thursdays standing out as particularly significant in terms of crime frequency.
+@fig-time-day illustrates that the highest number of incident records typically occurs on Thursday afternoons, which aligns with the previously presented graph. While, the lowest incidence of records is observed during Monday late nights. Notably, both Mondays and Tuesdays exhibit relatively low average incident records. In contrast, Thursdays consistently demonstrate the highest average number of crime records. These findings suggest distinct patterns in incident occurrences across different days of the week, with Thursdays standing out as particularly significant in terms of crime frequency.
 
 ## Perform an Analysis
 
@@ -127,7 +127,7 @@ Notably, the largest positive coefficient corresponds to 'police_district_Missio
 
 ![Coefficents of Logistic Regression Model](../results/coefficients_of_lr_model_plot.png){#fig-coefficents-lr-plot width=70%}
 
-The @fig-coefficents-lr-plot illustrates the coefficients of the features in the Logistic Regression model.
+@fig-coefficents-lr-plot illustrates the coefficients of the features in the Logistic Regression model.
 
 \newpage
 
