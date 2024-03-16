@@ -25,7 +25,7 @@ How to run (Docker Container):
 
 2. Open terminal and navigate to DSCI310-group10-project directory
 
-3. Run `docker compose up` and click provided link to jupyter lab
+3. Run `docker compose up` and click the last link provided to open jupyter lab
 
 4. Necessary files found withing the `work` directory
 
