@@ -13,7 +13,8 @@ all: data/raw/raw_data.csv \
 	results/crime_coefficients.csv \
 	results/coefficients_of_lr_model_plot.png \
 	reports/crime_report.html \
-	reports/crime_report.pdf
+	reports/crime_report.pdf \
+	docs/index.html
 
 # download data
 data/raw/raw_data.csv: src/script_raw.py 
@@ -53,6 +54,10 @@ reports/crime_report.html: results reports/quarto_reports.qmd
 reports/crime_report.pdf: results reports/quarto_reports.qmd
 	quarto render reports/quarto_reports.qmd --to pdf
 
+# create index.html
+docs/index.html: results docs/quarto_reports.qmd
+	cp docs/quarto_reports.html docs/index.html
+
 # 'make clean' will remove targeted files in clean:
 clean:
 	rm -rf data/raw/raw_data.csv
@@ -65,3 +70,4 @@ clean:
 		results/coefficients_of_lr_model_plot.png
 	rm -rf reports/quarto_reports.html \
 		reports/quarto_reports.pdf
+	rm -rf docs/index.html
