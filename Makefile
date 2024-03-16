@@ -18,7 +18,6 @@ all: data/raw/raw_data.csv \
 # download data
 data/raw/raw_data.csv: src/script_raw.py 
 	python src/script_raw.py \
-
 	https://data.sfgov.org/resource/wg3w-h783.csv \
 	data/raw/raw_data.csv
 
