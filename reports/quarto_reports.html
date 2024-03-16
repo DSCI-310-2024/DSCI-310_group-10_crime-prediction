@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.538">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -205,7 +205,7 @@ Figure&nbsp;2: Incidents Records by Day &amp; Time Period
 Table&nbsp;1: Cross-validation results for DummyClassifier
 </figcaption>
 <div aria-describedby="tbl-dummy-score-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="18">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="10">
 <table class="do-not-create-environment cell table table-sm table-striped small">
 <thead>
 <tr class="header">
@@ -217,8 +217,8 @@ Table&nbsp;1: Cross-validation results for DummyClassifier
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: right;">0.00857844</td>
-<td style="text-align: right;">0.000515461</td>
+<td style="text-align: right;">0.00392261</td>
+<td style="text-align: right;">0.000270557</td>
 <td style="text-align: right;">0.58</td>
 <td style="text-align: right;">0.58</td>
 </tr>
@@ -239,7 +239,7 @@ Table&nbsp;1: Cross-validation results for DummyClassifier
 Table&nbsp;2: Cross-validation results for LogisticRegression
 </figcaption>
 <div aria-describedby="tbl-cross-validation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="19">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="11">
 <table class="do-not-create-environment cell table table-sm table-striped small">
 <thead>
 <tr class="header">
@@ -251,8 +251,8 @@ Table&nbsp;2: Cross-validation results for LogisticRegression
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: right;">0.0699021</td>
-<td style="text-align: right;">0.00212359</td>
+<td style="text-align: right;">0.0092258</td>
+<td style="text-align: right;">0.0015378</td>
 <td style="text-align: right;">0.8</td>
 <td style="text-align: right;">0.806786</td>
 </tr>
@@ -271,7 +271,7 @@ Table&nbsp;2: Cross-validation results for LogisticRegression
 Table&nbsp;3: The list of coefficients value for each feature in the LogisticRegression model
 </figcaption>
 <div aria-describedby="tbl-coefficients-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="20">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="12">
 <table class="do-not-create-environment cell table table-sm table-striped small">
 <thead>
 <tr class="header">
@@ -282,95 +282,95 @@ Table&nbsp;3: The list of coefficients value for each feature in the LogisticReg
 <tbody>
 <tr class="odd">
 <td style="text-align: center;">incident_day_of_week_Friday</td>
-<td style="text-align: center;">0.257086</td>
+<td style="text-align: center;">0.258751</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">incident_day_of_week_Monday</td>
-<td style="text-align: center;">-0.0248591</td>
+<td style="text-align: center;">-0.0230964</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">incident_day_of_week_Saturday</td>
-<td style="text-align: center;">-0.100961</td>
+<td style="text-align: center;">-0.0987993</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">incident_day_of_week_Sunday</td>
-<td style="text-align: center;">0.268792</td>
+<td style="text-align: center;">0.271275</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">incident_day_of_week_Thursday</td>
-<td style="text-align: center;">-0.0932274</td>
+<td style="text-align: center;">-0.09121</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">incident_day_of_week_Tuesday</td>
-<td style="text-align: center;">-0.583675</td>
+<td style="text-align: center;">-0.582511</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">incident_day_of_week_Wednesday</td>
-<td style="text-align: center;">0.262755</td>
+<td style="text-align: center;">0.26553</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">police_district_Bayview</td>
-<td style="text-align: center;">0.313285</td>
+<td style="text-align: center;">0.314671</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">police_district_Central</td>
-<td style="text-align: center;">0.737457</td>
+<td style="text-align: center;">0.739305</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">police_district_Ingleside</td>
-<td style="text-align: center;">-0.161772</td>
+<td style="text-align: center;">-0.163468</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">police_district_Mission</td>
-<td style="text-align: center;">-0.0619557</td>
+<td style="text-align: center;">-0.0608789</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">police_district_Northern</td>
-<td style="text-align: center;">-0.354096</td>
+<td style="text-align: center;">-0.353042</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">police_district_Out of SF</td>
-<td style="text-align: center;">-2.51084</td>
+<td style="text-align: center;">-2.51058</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">police_district_Park</td>
-<td style="text-align: center;">0.335362</td>
+<td style="text-align: center;">0.340245</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">police_district_Richmond</td>
-<td style="text-align: center;">1.10814</td>
+<td style="text-align: center;">1.10824</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">police_district_Southern</td>
-<td style="text-align: center;">0.483276</td>
+<td style="text-align: center;">0.48437</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">police_district_Taraval</td>
-<td style="text-align: center;">0.56179</td>
+<td style="text-align: center;">0.561247</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">police_district_Tenderloin</td>
-<td style="text-align: center;">-0.464741</td>
+<td style="text-align: center;">-0.460165</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">time_period_Afternoon</td>
-<td style="text-align: center;">0.0693196</td>
+<td style="text-align: center;">0.074016</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">time_period_Evening</td>
-<td style="text-align: center;">-0.0870007</td>
+<td style="text-align: center;">-0.084367</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">time_period_Late Night</td>
-<td style="text-align: center;">-0.168627</td>
+<td style="text-align: center;">-0.166207</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">time_period_Morning</td>
-<td style="text-align: center;">-0.063571</td>
+<td style="text-align: center;">-0.0626125</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">time_period_Night</td>
-<td style="text-align: center;">0.235791</td>
+<td style="text-align: center;">0.23911</td>
 </tr>
 </tbody>
 </table>
@@ -391,7 +391,7 @@ Figure&nbsp;3: Coefficents of Logistic Regression Model
 </figcaption>
 </figure>
 </div>
-<p>The <a href="#fig-coefficents-lr-plot" class="quarto-xref">Figure&nbsp;3</a> illustrates the coefficients of the features in the Logistic Regression model.</p>
+<p><a href="#fig-coefficents-lr-plot" class="quarto-xref">Figure&nbsp;3</a> illustrates the coefficients of the features in the Logistic Regression model.</p>
 </section>
 </section>
 <section id="discussion" class="level2">
@@ -412,7 +412,7 @@ Figure&nbsp;3: Coefficents of Logistic Regression Model
 </section>
 <section id="future-questions" class="level3">
 <h3 class="anchored" data-anchor-id="future-questions">Future Questions</h3>
-<p>In-depth Examination of Districts: What factors contribute to higher occurrence probabilities in specific districts? Further exploration could consider socio-economic</p>
+<p>In-depth Examination of Districts: What factors contribute to greater occurrence probabilities in specific districts? Additional examination could take into account socio-economic variables, population density, or local event calendars. Temporal Dynamics: How do holidays and events at various periods of the year influence these patterns? Intervention Evaluation: Assessing the effectiveness of various policing measures in reducing risks at peak hours and in specific regions specified by the model.</p>
 </section>
 </section>
 <section id="references" class="level2 unnumbered">
@@ -514,6 +514,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -548,7 +566,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -596,7 +618,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
