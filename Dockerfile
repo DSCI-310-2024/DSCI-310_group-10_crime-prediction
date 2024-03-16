@@ -9,3 +9,4 @@ FROM quay.io/jupyter/scipy-notebook:2024-02-24
      pytest=8.1.1\
      vl-convert-python=1.3.0\
      tabulate = 0.9.0 
+

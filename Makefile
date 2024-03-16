@@ -4,6 +4,7 @@
 # example usage: make all
 
 # 'make all' will automatically create files targeted in all:
+
 all: data/raw/raw_data.csv \
 	data/processed/processed_data.csv \
 	results/time_period_plot.png \
@@ -17,9 +18,9 @@ all: data/raw/raw_data.csv \
 # download data
 data/raw/raw_data.csv: src/script_raw.py 
 	python src/script_raw.py \
+
 	https://data.sfgov.org/resource/wg3w-h783.csv \
 	data/raw/raw_data.csv
-
 
 # processed data (these are the transformed data, ready to use for analysis)
 data/processed/processed_data.csv: src/script_processed.py data/raw/raw_data.csv
