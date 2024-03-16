@@ -1,24 +1,24 @@
 features,coefficients
-incident_day_of_week_Friday,-0.3022540130437653
-incident_day_of_week_Monday,0.2743999650927192
-incident_day_of_week_Saturday,0.1643416557215522
-incident_day_of_week_Sunday,-0.4050396960271468
-incident_day_of_week_Thursday,-0.20605952647548542
-incident_day_of_week_Tuesday,0.18955890336466122
-incident_day_of_week_Wednesday,0.2876997968173209
-police_district_Bayview,0.12870980904350848
-police_district_Central,0.11382481590779626
-police_district_Ingleside,0.027332744723714292
-police_district_Mission,0.3942149811287758
-police_district_Northern,0.22693645527355924
-police_district_Out of SF,-1.884132477611864
-police_district_Park,0.3494551677563826
-police_district_Richmond,0.25187989089449087
-police_district_Southern,0.08418637789658615
-police_district_Taraval,0.27794659575787367
-police_district_Tenderloin,0.032292724679032776
-time_period_Afternoon,-0.2454788546831599
-time_period_Evening,0.017205938559133434
-time_period_Late Night,0.3158764632684119
-time_period_Morning,0.19116623167710298
-time_period_Night,-0.2761226933716339
+incident_day_of_week_Friday,0.2570861472631153
+incident_day_of_week_Monday,-0.02485908029238823
+incident_day_of_week_Saturday,-0.10096052265296727
+incident_day_of_week_Sunday,0.26879235455724076
+incident_day_of_week_Thursday,-0.09322742415095656
+incident_day_of_week_Tuesday,-0.5836745528919279
+incident_day_of_week_Wednesday,0.26275527509877245
+police_district_Bayview,0.3132852652392549
+police_district_Central,0.737457328865484
+police_district_Ingleside,-0.16177180984623488
+police_district_Mission,-0.061955710597433086
+police_district_Northern,-0.3540956375378842
+police_district_Out of SF,-2.510836076983686
+police_district_Park,0.33536229362987585
+police_district_Richmond,1.1081414821370839
+police_district_Southern,0.48327579018098604
+police_district_Taraval,0.561790354320875
+police_district_Tenderloin,-0.46474108247743523
+time_period_Afternoon,0.06931963965505754
+time_period_Evening,-0.0870007084210633
+time_period_Late Night,-0.16862665008550026
+time_period_Morning,-0.06357097157035838
+time_period_Night,0.2357908873527543

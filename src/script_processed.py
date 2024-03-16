@@ -14,11 +14,28 @@ def clean_and_process_data(input_path, output_path):
     # Save the cleaned data to the output path
     processed_data.to_csv(output_path, index=False)
 
+
+def get_time_period(hour, minute):
+    if 0 < hour < 6 or (hour == 6 and minute == 0):
+        return 'Late Night'
+    elif 6 < hour < 12 or (hour == 6 and minute > 0) or (hour == 12 and minute == 0):
+        return 'Morning'
+    elif 12 < hour < 18 or (hour == 12 and minute > 0) or (hour == 18 and minute == 0):
+        return 'Afternoon'
+    elif 18 < hour < 21 or (hour == 18 and minute > 0) or (hour == 21 and minute == 0):
+        return 'Evening'
+    else:
+        return 'Night'
+    
+
 def preprocess_data(data):
+    data['incident_datetime'] = pd.to_datetime(data['incident_datetime'], errors='coerce')
     # Isolate necessary features
     data = data[['incident_datetime', 'incident_time', 'incident_day_of_week',
                  'incident_category', 'incident_subcategory', 'police_district']]
     
+
+
     # Add hour and minute features
     data = data.assign(hour=data['incident_datetime'].dt.hour,
                        minute=data['incident_datetime'].dt.minute)
@@ -33,18 +50,6 @@ def preprocess_data(data):
     data = data[['incident_day_of_week', 'police_district', 'time_period', 'if_crime']]
     
     return data
-
-def get_time_period(hour, minute):
-    if 0 < hour < 6 or (hour == 6 and minute == 0):
-        return 'Late Night'
-    elif 6 < hour < 12 or (hour == 6 and minute > 0) or (hour == 12 and minute == 0):
-        return 'Morning'
-    elif 12 < hour < 18 or (hour == 12 and minute > 0) or (hour == 18 and minute == 0):
-        return 'Afternoon'
-    elif 18 < hour < 21 or (hour == 18 and minute > 0) or (hour == 21 and minute == 0):
-        return 'Evening'
-    else:
-        return 'Night'
 
 def add_if_crime_feature(data):
     criminal_incident = ["Larceny - From Vehicle", "Vandalism", "Larceny Theft - Other", "Motor Vehicle Theft",             

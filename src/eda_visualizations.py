@@ -21,7 +21,7 @@ def saveVisualizations(data, output_path):
         y = alt.Y('count()', title = 'Count of Records')
         ).configure_axisX(
         labelAngle=45
-        )#.properties(title='The distribution of Time Period')
+        ).properties(height = 150)
 
     time_period_dist.save(output_path + '/time_period_plot.png')
 
@@ -31,9 +31,8 @@ def saveVisualizations(data, output_path):
         y = alt.Y('count()', title = 'Count of Records')
         ).properties(height = 150).facet(
         facet = alt.Facet('incident_day_of_week',title=None,
-        )#,
-        #title = 'Incidents Records by Time Period & Day'
-        #)
+        ))#,
+        #title = 'Incidents Records by Time Period & Day')
 
     day_time.save(output_path + '/records_by_time_and_day_plot.png')
 
