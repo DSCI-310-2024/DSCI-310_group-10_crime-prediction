@@ -70,3 +70,6 @@ clean:
 	rm -rf docs/quarto_reports.html \
 		docs/quarto_reports.pdf
 	rm -rf docs/index.html
+
+
+test
