@@ -31,7 +31,7 @@ How to run (Docker Container):
 
 5. Necessary files found withing the `work` directory
 
-6. To shut down and remove all ports from container use `Crtl + c`
+6. To shut down and remove all ports from container use `Crtl + c`, or open a new window and use `docker-compose down`.
 
 List of Dependencies: 
 - **NumPy**: `pip install numpy`
