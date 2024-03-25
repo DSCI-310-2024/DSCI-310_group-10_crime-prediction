@@ -25,11 +25,13 @@ How to run (Docker Container):
 
 2. Open terminal and navigate to DSCI310-group10-project directory
 
-3. Run `docker-compose up` and click the last link provided to open jupyter lab (or the command used to pull the docker image `docker pull ekenny02/dsci310-group10-project`)
+3. Run `docker-compose build`, this will create a docker image
 
-4. Necessary files found withing the `work` directory
+4. Run `docker-compose up` and click the last link provided to open jupyter lab (or the command used to pull the docker image `docker pull ekenny02/dsci310-group10-project`)
 
-5. To shut down and remove all ports from container use `docker-compose down`
+5. Necessary files found withing the `work` directory
+
+6. To shut down and remove all ports from container use `Crtl + c`
 
 List of Dependencies: 
 - **NumPy**: `pip install numpy`
