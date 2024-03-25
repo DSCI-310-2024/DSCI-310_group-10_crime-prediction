@@ -33,7 +33,7 @@ How to run (Docker Container):
 
 6. To shut down and exit container use `Crtl + c`
 
-7. Removing volumes, images, containers, use `docker-compose down --rmi all --volumes --remove-orphans`
+7. Removing volumes, images, containers, open another window in terminal and run `docker-compose down --rmi all --volumes --remove-orphans`
 
 List of Dependencies: 
 - **NumPy**: `pip install numpy`
