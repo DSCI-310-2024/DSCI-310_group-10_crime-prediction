@@ -63,8 +63,5 @@ clean:
 	rm -rf results/time_period_plot.png \
 		results/records_by_time_and_day_plot.png \
 		results/coefficients_of_lr_model_plot.png
-	rm -rf docs/quarto_reports.html \
-		docs/quarto_reports.pdf
-	rm -rf docs/index.html
-
-
+	rm -rf reports/quarto_reports.html \
+		reports/quarto_reports.pdf
