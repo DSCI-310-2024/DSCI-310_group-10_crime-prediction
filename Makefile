@@ -12,8 +12,8 @@ all: data/raw/raw_data.csv \
 	results/cross_validation_results.csv \
 	results/crime_coefficients.csv \
 	results/coefficients_of_lr_model_plot.png \
-	reports/crime_report.html \
-	reports/crime_report.pdf
+	reports/quarto_reports.html \
+	reports/quarto_reports.pdf
 
 # download data
 data/raw/raw_data.csv: src/script_raw.py 
@@ -46,11 +46,11 @@ results/coefficients_of_lr_model_plot.png: src/analysis_visualization.py results
 	results
 
 # render to html
-reports/crime_report.html: results reports/quarto_reports.qmd
+reports/quarto_reports.html: results reports/quarto_reports.qmd
 	quarto render reports/quarto_reports.qmd --to html
 
 # render to pdf
-reports/crime_report.pdf: results reports/quarto_reports.qmd
+reports/quarto_reports.pdf: results reports/quarto_reports.qmd
 	quarto render reports/quarto_reports.qmd --to pdf
 
 # 'make clean' will remove targeted files in clean:
