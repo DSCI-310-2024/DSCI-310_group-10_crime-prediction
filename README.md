@@ -31,9 +31,9 @@ How to run (Docker Container):
 
 5. Necessary files found withing the `work` directory
 
-6. To shut down and exit container use `Crtl + c`.
+6. To shut down and exit container use `Crtl + c`
 
-7. Removing containers `docker-compose down -v`, removing images `docker-compose down --rmi all`, removing volumes `docker volume prune -f`.
+7. Removing volumes, images, containers, use `docker-compose down --rmi all --volumes --remove-orphans`
 
 List of Dependencies: 
 - **NumPy**: `pip install numpy`
