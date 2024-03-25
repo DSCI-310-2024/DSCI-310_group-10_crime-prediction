@@ -12,9 +12,9 @@ all: data/raw/raw_data.csv \
 	results/cross_validation_results.csv \
 	results/crime_coefficients.csv \
 	results/coefficients_of_lr_model_plot.png \
-	docs/quarto_reports.html \
-	docs/quarto_reports.pdf \
-	docs/index.html
+	reports/quarto_reports.html \
+	reports/quarto_reports.pdf
+
 # download data
 data/raw/raw_data.csv: src/script_raw.py 
 	python src/script_raw.py \
@@ -46,16 +46,12 @@ results/coefficients_of_lr_model_plot.png: src/analysis_visualization.py results
 	results
 
 # render to html
-docs/quarto_reports.html: results docs/quarto_reports.qmd
-	quarto render docs/quarto_reports.qmd --to html
+reports/quarto_reports.html: results reports/quarto_reports.qmd
+	quarto render reports/quarto_reports.qmd --to html
 
 # render to pdf
-docs/quarto_reports.pdf: results docs/quarto_reports.qmd
-	quarto render docs/quarto_reports.qmd --to pdf
-
-# create index.html
-docs/index.html: results docs/quarto_reports.qmd
-	cp docs/quarto_reports.html docs/index.html
+reports/quarto_reports.pdf: results reports/quarto_reports.qmd
+	quarto render reports/quarto_reports.qmd --to pdf
 
 # 'make clean' will remove targeted files in clean:
 clean:
@@ -72,4 +68,3 @@ clean:
 	rm -rf docs/index.html
 
 
-test
