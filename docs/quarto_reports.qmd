@@ -8,6 +8,7 @@ format:
     pdf:
         toc: true
         toc-depth: 2
+        embed-resources: true
 bibliography: references.bib
 execute:
     echo: false
