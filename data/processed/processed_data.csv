@@ -642,7 +642,7 @@ Thursday,Mission,Late Night,1
 Tuesday,Northern,Morning,1
 Monday,Southern,Late Night,1
 Friday,Central,Afternoon,1
-Tuesday,Southern,Afternoon,1
+Sunday,Southern,Late Night,0
 Friday,Richmond,Morning,1
 Monday,Southern,Evening,1
 Tuesday,Out of SF,Afternoon,0
@@ -669,14 +669,14 @@ Monday,Out of SF,Evening,0
 Monday,Mission,Afternoon,1
 Friday,Southern,Morning,1
 Saturday,Northern,Morning,0
-Monday,Northern,Afternoon,1
+Wednesday,Central,Morning,1
 Sunday,Richmond,Morning,1
 Wednesday,Mission,Night,1
 Sunday,Taraval,Evening,1
 Friday,Central,Late Night,1
 Saturday,Central,Afternoon,1
 Saturday,Southern,Afternoon,1
-Wednesday,Mission,Late Night,1
+Sunday,Northern,Morning,1
 Tuesday,Ingleside,Night,1
 Friday,Central,Evening,1
 Tuesday,Out of SF,Afternoon,0
@@ -699,8 +699,8 @@ Thursday,Central,Evening,1
 Friday,Mission,Afternoon,1
 Saturday,Out of SF,Afternoon,0
 Wednesday,Southern,Morning,1
-Sunday,Taraval,Evening,1
-Monday,Mission,Morning,0
+Wednesday,Mission,Evening,1
+Friday,Out of SF,Late Night,0
 Wednesday,Mission,Evening,1
 Tuesday,Northern,Evening,1
 Wednesday,Central,Afternoon,1
@@ -730,7 +730,7 @@ Sunday,Out of SF,Morning,0
 Thursday,Central,Afternoon,1
 Saturday,Richmond,Afternoon,1
 Sunday,Northern,Afternoon,1
-Wednesday,Southern,Night,1
+Monday,Bayview,Late Night,1
 Tuesday,Bayview,Evening,1
 Thursday,Out of SF,Morning,1
 Thursday,Out of SF,Morning,1
@@ -738,7 +738,7 @@ Friday,Mission,Late Night,1
 Tuesday,Out of SF,Afternoon,0
 Monday,Out of SF,Morning,0
 Monday,Central,Late Night,1
-Sunday,Ingleside,Morning,0
+Wednesday,Bayview,Afternoon,0
 Sunday,Out of SF,Late Night,0
 Wednesday,Central,Morning,1
 Sunday,Out of SF,Morning,0
@@ -759,7 +759,7 @@ Friday,Central,Evening,1
 Wednesday,Northern,Afternoon,0
 Thursday,Taraval,Late Night,1
 Friday,Central,Afternoon,1
-Friday,Southern,Evening,1
+Saturday,Richmond,Night,0
 Thursday,Park,Afternoon,1
 Monday,Bayview,Morning,1
 Thursday,Taraval,Afternoon,1
@@ -779,6 +779,7 @@ Monday,Out of SF,Morning,0
 Friday,Richmond,Evening,1
 Sunday,Central,Afternoon,1
 Saturday,Southern,Afternoon,1
+Friday,Out of SF,Afternoon,1
 Saturday,Southern,Morning,1
 Thursday,Out of SF,Late Night,0
 Monday,Out of SF,Morning,0
@@ -818,7 +819,7 @@ Monday,Out of SF,Night,0
 Sunday,Mission,Afternoon,1
 Tuesday,Out of SF,Evening,0
 Saturday,Out of SF,Afternoon,0
-Wednesday,Ingleside,Morning,1
+Thursday,Bayview,Afternoon,0
 Saturday,Southern,Afternoon,1
 Friday,Central,Afternoon,1
 Wednesday,Out of SF,Morning,1
@@ -837,6 +838,7 @@ Sunday,Central,Afternoon,1
 Wednesday,Out of SF,Afternoon,1
 Sunday,Out of SF,Afternoon,0
 Sunday,Out of SF,Afternoon,1
+Thursday,Out of SF,Afternoon,0
 Wednesday,Mission,Morning,0
 Wednesday,Northern,Afternoon,1
 Friday,Out of SF,Afternoon,0
@@ -865,8 +867,6 @@ Thursday,Out of SF,Evening,0
 Sunday,Bayview,Evening,0
 Wednesday,Mission,Morning,1
 Saturday,Southern,Night,1
-Thursday,Out of SF,Afternoon,0
-Friday,Out of SF,Afternoon,1
 Tuesday,Out of SF,Afternoon,0
 Sunday,Bayview,Evening,1
 Tuesday,Out of SF,Afternoon,0
@@ -881,7 +881,7 @@ Friday,Southern,Evening,1
 Sunday,Central,Afternoon,1
 Wednesday,Out of SF,Afternoon,1
 Monday,Central,Evening,1
-Thursday,Mission,Afternoon,1
+Sunday,Park,Morning,1
 Friday,Out of SF,Afternoon,0
 Saturday,Out of SF,Afternoon,1
 Wednesday,Central,Evening,1
@@ -906,7 +906,7 @@ Wednesday,Mission,Afternoon,1
 Sunday,Out of SF,Morning,1
 Saturday,Out of SF,Afternoon,0
 Saturday,Out of SF,Afternoon,0
-Wednesday,Southern,Afternoon,1
+Sunday,Northern,Afternoon,0
 Tuesday,Mission,Morning,0
 Monday,Southern,Evening,1
 Tuesday,Taraval,Afternoon,1

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.4.538">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -180,7 +180,7 @@ Figure&nbsp;1: The Distribution of Time Period.
 </figcaption>
 </figure>
 </div>
-<p>The <a href="#fig-time-period-plot" class="quarto-xref">Figure&nbsp;1</a> depicts the distribution of incidents across different time periods, revealing a notable concentration of records in the afternoon. This observation suggests that a significant portion of incidents tend to occur during the afternoon hours.</p>
+<p><a href="#fig-time-period-plot" class="quarto-xref">Figure&nbsp;1</a> depicts the distribution of incidents across different time periods, revealing a notable concentration of records in the afternoon. This observation suggests that a significant portion of incidents tend to occur during the afternoon hours.</p>
 <p>We then look into how time period and day of the week interactively affect the number of incidents by creating the next image.</p>
 <div id="fig-time-day" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -192,7 +192,7 @@ Figure&nbsp;2: Incidents Records by Day &amp; Time Period
 </figcaption>
 </figure>
 </div>
-<p>The <a href="#fig-time-day" class="quarto-xref">Figure&nbsp;2</a> illustrates that the highest number of incident records typically occurs on Thursday afternoons, which aligns with the previously presented graph. While, the lowest incidence of records is observed during Monday late nights. Notably, both Mondays and Tuesdays exhibit relatively low average incident records. In contrast, Thursdays consistently demonstrate the highest average number of crime records. These findings suggest distinct patterns in incident occurrences across different days of the week, with Thursdays standing out as particularly significant in terms of crime frequency.</p>
+<p><a href="#fig-time-day" class="quarto-xref">Figure&nbsp;2</a> illustrates that the highest number of incident records typically occurs on Thursday afternoons, which aligns with the previously presented graph. While, the lowest incidence of records is observed during Monday late nights. Notably, both Mondays and Tuesdays exhibit relatively low average incident records. In contrast, Thursdays consistently demonstrate the highest average number of crime records. These findings suggest distinct patterns in incident occurrences across different days of the week, with Thursdays standing out as particularly significant in terms of crime frequency.</p>
 </section>
 <section id="perform-an-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="perform-an-analysis">Perform an Analysis</h2>
@@ -205,7 +205,7 @@ Figure&nbsp;2: Incidents Records by Day &amp; Time Period
 Table&nbsp;1: Cross-validation results for DummyClassifier
 </figcaption>
 <div aria-describedby="tbl-dummy-score-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="10">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="2">
 <table class="do-not-create-environment cell table table-sm table-striped small">
 <thead>
 <tr class="header">
@@ -217,10 +217,10 @@ Table&nbsp;1: Cross-validation results for DummyClassifier
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: right;">0.00392261</td>
-<td style="text-align: right;">0.000270557</td>
-<td style="text-align: right;">0.58</td>
-<td style="text-align: right;">0.58</td>
+<td style="text-align: right;">0.00481486</td>
+<td style="text-align: right;">0.000223875</td>
+<td style="text-align: right;">0.572857</td>
+<td style="text-align: right;">0.572857</td>
 </tr>
 </tbody>
 </table>
@@ -239,7 +239,7 @@ Table&nbsp;1: Cross-validation results for DummyClassifier
 Table&nbsp;2: Cross-validation results for LogisticRegression
 </figcaption>
 <div aria-describedby="tbl-cross-validation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="11">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="3">
 <table class="do-not-create-environment cell table table-sm table-striped small">
 <thead>
 <tr class="header">
@@ -251,10 +251,10 @@ Table&nbsp;2: Cross-validation results for LogisticRegression
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: right;">0.0092258</td>
-<td style="text-align: right;">0.0015378</td>
-<td style="text-align: right;">0.8</td>
-<td style="text-align: right;">0.806786</td>
+<td style="text-align: right;">0.0672171</td>
+<td style="text-align: right;">0.00179796</td>
+<td style="text-align: right;">0.792857</td>
+<td style="text-align: right;">0.801786</td>
 </tr>
 </tbody>
 </table>
@@ -271,7 +271,7 @@ Table&nbsp;2: Cross-validation results for LogisticRegression
 Table&nbsp;3: The list of coefficients value for each feature in the LogisticRegression model
 </figcaption>
 <div aria-describedby="tbl-coefficients-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="12">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="4">
 <table class="do-not-create-environment cell table table-sm table-striped small">
 <thead>
 <tr class="header">
@@ -282,95 +282,95 @@ Table&nbsp;3: The list of coefficients value for each feature in the LogisticReg
 <tbody>
 <tr class="odd">
 <td style="text-align: center;">incident_day_of_week_Friday</td>
-<td style="text-align: center;">0.258751</td>
+<td style="text-align: center;">0.256219</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">incident_day_of_week_Monday</td>
-<td style="text-align: center;">-0.0230964</td>
+<td style="text-align: center;">0.0345748</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">incident_day_of_week_Saturday</td>
-<td style="text-align: center;">-0.0987993</td>
+<td style="text-align: center;">-0.0825142</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">incident_day_of_week_Sunday</td>
-<td style="text-align: center;">0.271275</td>
+<td style="text-align: center;">0.0909945</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">incident_day_of_week_Thursday</td>
-<td style="text-align: center;">-0.09121</td>
+<td style="text-align: center;">-0.0163531</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">incident_day_of_week_Tuesday</td>
-<td style="text-align: center;">-0.582511</td>
+<td style="text-align: center;">-0.565287</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">incident_day_of_week_Wednesday</td>
-<td style="text-align: center;">0.26553</td>
+<td style="text-align: center;">0.312172</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">police_district_Bayview</td>
-<td style="text-align: center;">0.314671</td>
+<td style="text-align: center;">0.225751</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">police_district_Central</td>
-<td style="text-align: center;">0.739305</td>
+<td style="text-align: center;">0.742978</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">police_district_Ingleside</td>
-<td style="text-align: center;">-0.163468</td>
+<td style="text-align: center;">-0.13491</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">police_district_Mission</td>
-<td style="text-align: center;">-0.0608789</td>
+<td style="text-align: center;">0.0422108</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">police_district_Northern</td>
-<td style="text-align: center;">-0.353042</td>
+<td style="text-align: center;">-0.419885</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">police_district_Out of SF</td>
-<td style="text-align: center;">-2.51058</td>
+<td style="text-align: center;">-2.46241</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">police_district_Park</td>
-<td style="text-align: center;">0.340245</td>
+<td style="text-align: center;">0.357569</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">police_district_Richmond</td>
-<td style="text-align: center;">1.10824</td>
+<td style="text-align: center;">0.914667</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">police_district_Southern</td>
-<td style="text-align: center;">0.48437</td>
+<td style="text-align: center;">0.45178</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">police_district_Taraval</td>
-<td style="text-align: center;">0.561247</td>
+<td style="text-align: center;">0.545244</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">police_district_Tenderloin</td>
-<td style="text-align: center;">-0.460165</td>
+<td style="text-align: center;">-0.233187</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">time_period_Afternoon</td>
-<td style="text-align: center;">0.074016</td>
+<td style="text-align: center;">0.0352574</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">time_period_Evening</td>
-<td style="text-align: center;">-0.084367</td>
+<td style="text-align: center;">-0.0914117</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">time_period_Late Night</td>
-<td style="text-align: center;">-0.166207</td>
+<td style="text-align: center;">-0.139859</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">time_period_Morning</td>
-<td style="text-align: center;">-0.0626125</td>
+<td style="text-align: center;">-0.0464544</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">time_period_Night</td>
-<td style="text-align: center;">0.23911</td>
+<td style="text-align: center;">0.272274</td>
 </tr>
 </tbody>
 </table>
@@ -514,24 +514,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -566,11 +548,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -618,12 +596,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
+      return note.innerHTML;
     }
   }
   for (var i=0; i<xrefs.length; i++) {
