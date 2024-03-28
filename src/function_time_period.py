@@ -1,5 +1,5 @@
 
-def get_time_period(hour, minute):
+def get_time_period(hour:int, minute:int):
     """
     get the correct time period for the incident time
 
@@ -30,3 +30,16 @@ def get_time_period(hour, minute):
     This function does not need extra library. It will provide the indication of the time period from the given data.
 
     """
+    if not isinstance(hour, int) or not isinstance(minute, int):
+         raise TypeError('Both hour and minute input should be integer')
+    if 0 < hour < 6 or (hour == 6 and minute == 0):
+        return 'Late Night'
+    elif 6 < hour < 12 or (hour == 6 and minute > 0) or (hour == 12 and minute == 0):
+        return 'Morning'
+    elif 12 < hour < 18 or (hour == 12 and minute > 0) or (hour == 18 and minute == 0):
+        return 'Afternoon'
+    elif 18 < hour < 21 or (hour == 18 and minute > 0) or (hour == 21 and minute == 0):
+        return 'Evening'
+    else:
+        return 'Night'
+
