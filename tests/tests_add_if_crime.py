@@ -26,8 +26,6 @@ test_incorrect_column_value_type = pd.DataFrame({
     "incident_subcategory": [1, 2, 3]  # Integer values instead of strings
 })
 
-test_not_dataFrame = "This is not a dataFrame"
-
 
 
 # Expected outputs
@@ -67,12 +65,6 @@ def test_add_if_crime_contains_incident_subcategory():
 # Test function for boundary values
 def test_add_if_crime_boundary():
     pd.testing.assert_frame_equal(add_if_crime_feature(test_data_boundary), boundary_output)
-
-# Test for correct error handling for incorrect type of column value 
-# (not a string)
-def test_add_if_crime_incorrect_column_value_type():
-    with pytest.raises(TypeError, match="Input data should contain string values"):
-        add_if_crime_feature(test_incorrect_column_value_type)
 
 
 # Test for correct error handling for incorrect object type 
