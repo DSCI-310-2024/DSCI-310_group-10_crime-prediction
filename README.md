@@ -12,7 +12,7 @@ Law enforcement agencies worldwide prioritize crime prevention and public safety
 2. Create and Activate the Conda Environment containing important dependencies:
    `conda env create -f environment.yml`
     `conda activate group10_environment`
-4. Launch JupyterLab either through Git or terminal on your computer.
+4. Launch Jupyter Lab either through Git or terminal on your computer.
 
 5. Navigate to the root of the directory where `time_period_crime.ipynb` is located.
 
@@ -25,7 +25,7 @@ Law enforcement agencies worldwide prioritize crime prevention and public safety
 
 2. Open terminal and navigate to DSCI310-group10-project directory
 
-Note: Make sure Docker Desktop is installed and running in the background
+Note: Make sure [Docker Desktop](https://www.docker.com/products/docker-desktop/) is installed and running in the background
 
 4. Run `docker-compose build`, this will create a docker image
 
