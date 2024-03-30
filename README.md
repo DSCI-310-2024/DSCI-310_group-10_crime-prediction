@@ -55,8 +55,9 @@ To remove all generated files and clean up the project directory, use the comman
 
 To run tests for functions in data analysis using pytest, follow these steps:
 
-- Open terminal
+- Open terminal.
 - Navigate to the root directory of your project where the `tests` directory is located.
+Note: The functions will be in the `src` directory e.g. __function_time_period.py__, the tests will be in `test` directory e.g. __tests_time_period.py__.
 - Run the following command:
     ```bash
     pytest tests/*
