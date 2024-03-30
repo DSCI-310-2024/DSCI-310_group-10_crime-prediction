@@ -3,7 +3,7 @@
 Authors: Cassandra Zhang, Ethan Kenny, James He, Pragya Singhal
 
 Short Summary: \
-Law enforcement agencies worldwide prioritize crime prevention and public safety, traditionally relying on experience and intuition for resource allocation. However, advancements in data analysis now enable a more data-driven approach. This analysis aims to predict the appearance of criminal incidents from time period, day of the week, and police district based on data from San Francisco 2023. Understanding time-related crime patterns can inform proactive policing strategies. By associating time periods, police districts, and days of the week with the appearance of criminal incidents, this study aims to provide a forecasting tool for police patrol scheduling and resource allocation, ultimately enhancing law enforcement activities and public safety.
+Law enforcement agencies worldwide prioritize crime prevention and public safety, traditionally relying on experience and intuition for resource allocation. However, advancements in data analysis now enable a more data-driven approach. This analysis aims to predict the appearance of criminal incidents from time period, day of the week, and police district based on data from [San Francisco 2023]( https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783/about_data). Understanding time-related crime patterns can inform proactive policing strategies. By associating time periods, police districts, and days of the week with the appearance of criminal incidents, this study aims to provide a forecasting tool for police patrol scheduling and resource allocation, ultimately enhancing law enforcement activities and public safety.
 
 ## How to run (Virtual Environment):
 
