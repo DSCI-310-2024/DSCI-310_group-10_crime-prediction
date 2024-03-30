@@ -14,9 +14,9 @@ Law enforcement agencies worldwide prioritize crime prevention and public safety
     `conda activate group10_environment`
 4. Launch Jupyter Lab either through Git or terminal on your computer.
 
-5. Navigate to the root of the directory where `time_period_crime.ipynb` is located.
+5. Navigate to the root of the directory where __time_period_crime.ipynb__ is located.
 
-6. Open the `time_period_crime.ipynb` file in JupyterLab to access the analysis and execute the code.
+6. Open the __time_period_crime.ipynb__ file in JupyterLab to access the analysis and execute the code.
 
 ## How to run (Docker Container):
 
@@ -45,7 +45,7 @@ Once you have started Jupyter Lab using docker-compose up and accessed it throug
 ```
 make all
 ```
-This will create `time_period_crime` as an HTML and PDF file. Additionally, it will generate the necessary plots and graphs.
+This will create __time_period_crime__ as an HTML and PDF file. Additionally, it will generate the necessary plots and graphs.
 
 Cleaning Up
 
