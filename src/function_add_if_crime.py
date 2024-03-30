@@ -2,13 +2,13 @@ import pandas as pd
 
 def add_if_crime_feature(data):
     """
-    Adds a binary column 'if_crime' to the DataFrame as the target value indicating whether
-    the incident_subcategory is a criminal incident or not.
+    Adds a binary column 'if_crime' to the DataFrame as the target value indicating whether the incident_subcategory is a criminal incident or not.
 
     If the incident_subcategory is one of the criminal_incident, then the column of 'if_crime' will be 1.
     If the incident_subcategory is not in one of the criminal_incident, then the column of 'if_crime' will be 0.
 
     Parameters:
+    -----------
       data (DataFrame): A pandas DataFrame containing the incident data.
       The data should include the incident_subcategory as one of the features.
     
@@ -26,7 +26,9 @@ def add_if_crime_feature(data):
     1                Fraud         1
 
     Notes:
+    ------
     This function requires panda library for dataFrame.
+    
     """
     if not isinstance(data, pd.DataFrame):
         raise TypeError(AttributeError)
