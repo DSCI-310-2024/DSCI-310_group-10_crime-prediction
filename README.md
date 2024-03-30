@@ -25,15 +25,17 @@ Law enforcement agencies worldwide prioritize crime prevention and public safety
 
 2. Open terminal and navigate to DSCI310-group10-project directory
 
-3. Run `docker-compose build`, this will create a docker image
+Note: Make sure Docker Desktop is installed and running in the background
 
-4. Run `docker-compose up` and click the last link provided to open Jupyter Lab (or the command used to pull the docker image `docker pull ekenny02/dsci310-group10-project`)
+4. Run `docker-compose build`, this will create a docker image
 
-5. Necessary files found withing the `work` directory
+5. Run `docker-compose up` and click the last link provided to open Jupyter Lab (or the command used to pull the docker image `docker pull ekenny02/dsci310-group10-project`)
 
-6. To shut down and exit container use `Crtl + c`
+6. Necessary files found withing the `work` directory
 
-7. Removing volumes, images, containers, open another window in terminal and run `docker-compose down --rmi all --volumes --remove-orphans`
+7. To shut down and exit container use `Crtl + c`
+
+8. Removing volumes, images, containers, open another window in terminal and run `docker-compose down --rmi all --volumes --remove-orphans`
 
 Makefile (for creating HTML and PDF Files)
 
@@ -48,6 +50,22 @@ This will create `time_period_crime` as an HTML and PDF file. Additionally, it w
 Cleaning Up
 
 To remove all generated files and clean up the project directory, use the command `make clean`. This will target and remove processed data, charts, the final report, and any other generated files.
+
+## Running tests for functions in data analysis
+
+To run tests for functions in data analysis using pytest, follow these steps:
+
+- Open terminal
+- Navigate to the root directory of your project where the `tests` directory is located.
+- Run the following command:
+    ```bash
+    pytest tests/*
+    ```
+    This command tells pytest to run all tests in the `tests` directory and its subdirectories.
+- After executing the command, pytest will run all test files (`test_*.py`) within the specified directory.
+- This will output any passed or failed tests.
+
+
 
 ## List of Dependencies: 
 - **NumPy**: `pip install numpy`
