@@ -14,12 +14,13 @@ def read_save_data(input_path: str, output_path: str):
 
     Returns:
     --------
-    Void
+    DataFrame
+        Representation of the csv data as a dataFrame
         
     Examples:
     ---------
-    >>> read_save_data('dataUrl', 'newFilePath') # replace ('dataUrl', 'newFilePath') with the actual url of data and filepath to be written to
-    >>> print(pd.read_csv('newFilePath.csv'))
+    >>> data = read_save_data('dataUrl', 'newFilePath') # replace ('dataUrl', 'newFilePath') with the actual url of data and filepath to be written to
+    >>> print(data)
 
     Notes:
     ------
@@ -35,3 +36,5 @@ def read_save_data(input_path: str, output_path: str):
     
     # Save the data to the output path
     raw_data.to_csv(output_path, index=False)
+
+    return raw_data
