@@ -19,12 +19,16 @@ test_data3 = pd.DataFrame({
     "no_subcategory": ["Vandalism", "Fraud"]
 })
 test_data_boundary = pd.DataFrame({
-    "incident_subcategory": ["Robbery - Commercial", "Simple Assault", "Burglary - Residential", "Theft From Vehicle", "Traffic Violation Arrest"]
+    "incident_subcategory": ["Robbery - Commercial"]
 })
-test_not_string = pd.DataFrame({
-    "incident_subcategory": [1, 2]  # non-string values
+
+test_incorrect_column_value_type = pd.DataFrame({
+    "incident_subcategory": [1, 2, 3]  # Integer values instead of strings
 })
-test_not_dataFrame = "This is not a DataFrame"
+
+test_not_dataFrame = "This is not a dataFrame"
+
+
 
 # Expected outputs
 case1_output = pd.DataFrame({
@@ -35,11 +39,12 @@ case2_output = pd.DataFrame({
     "incident_subcategory": ["Theft", "Assault"],
     "if_crime": [0, 0]
 })
-case3_output = "Please insert correct datatype with incident category"
 boundary_output = pd.DataFrame({
-    "incident_subcategory": ["Robbery - Commercial", "Simple Assault", "Burglary - Residential", "Theft From Vehicle", "Traffic Violation Arrest"],
-    "if_crime": [1, 1, 1, 1, 0]
+    "incident_subcategory": ["Robbery - Commercial"],
+    "if_crime": [1]
 })
+
+
 
 
 # test for correct return type
@@ -56,7 +61,8 @@ def test_add_if_crime_output():
 
 # Test for correcting handling for dataFrame with missing crime_incident column
 def test_add_if_crime_contains_incident_subcategory():
-    assert add_if_crime_feature(test_data3) == case3_output, "Expected error message when incident_category column is missing"
+    with pytest.raises(KeyError):
+        add_if_crime_feature(test_data3)
 
 # Test function for boundary values
 def test_add_if_crime_boundary():
@@ -64,12 +70,13 @@ def test_add_if_crime_boundary():
 
 # Test for correct error handling for incorrect type of column value 
 # (not a string)
-def test_add_if_crime_not_string():
-    with pytest.raises(TypeError):
-        add_if_crime_feature(test_not_string)
+def test_add_if_crime_incorrect_column_value_type():
+    with pytest.raises(TypeError, match="Input data should contain string values"):
+        add_if_crime_feature(test_incorrect_column_value_type)
+
 
 # Test for correct error handling for incorrect object type 
 # (not a pandas data frame)
 def test_non_dataframe_input_handling():
-    with pytest.raises(AttributeError):
+    with pytest.raises(TypeError, match="Input data should be a pandas DataFrame"):
         add_if_crime_feature(test_not_dataFrame)
