@@ -47,8 +47,8 @@ def test_add_if_crime_returns_dataFrame():
     assert isinstance(result, pd.DataFrame), "Output should be a pandas DataFrame"
 
 # test for correct output for different cases
-# case1: crime_subcategory is in incident_category
-# case2: crime_subcategory is not in criminal_incident
+# case1: incident_subcategory value is in the list of criminal_incident
+# case2: incident_subcategory value is not in the list of criminal_incident
 def test_add_if_crime_output():
     pd.testing.assert_frame_equal(add_if_crime_feature(test_data1), case1_output)
     pd.testing.assert_frame_equal(add_if_crime_feature(test_data2), case2_output)
