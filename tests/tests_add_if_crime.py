@@ -22,10 +22,6 @@ test_data_boundary = pd.DataFrame({
     "incident_subcategory": ["Robbery - Commercial"]
 })
 
-test_incorrect_column_value_type = pd.DataFrame({
-    "incident_subcategory": [1, 2, 3]  # Integer values instead of strings
-})
-
 
 
 # Expected outputs
