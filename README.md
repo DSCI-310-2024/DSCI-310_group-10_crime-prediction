@@ -2,7 +2,7 @@
 
 Authors: Cassandra Zhang, Ethan Kenny, James He, Pragya Singhal
 
-Short Summary: \
+## Short Summary:
 Law enforcement agencies worldwide prioritize crime prevention and public safety, traditionally relying on experience and intuition for resource allocation. However, advancements in data analysis now enable a more data-driven approach. This analysis aims to predict the appearance of criminal incidents from time period, day of the week, and police district based on data from [San Francisco 2023]( https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783/about_data). Understanding time-related crime patterns can inform proactive policing strategies. By associating time periods, police districts, and days of the week with the appearance of criminal incidents, this study aims to provide a forecasting tool for police patrol scheduling and resource allocation, ultimately enhancing law enforcement activities and public safety.
 
 ## How to run (Virtual Environment):
@@ -16,7 +16,7 @@ Law enforcement agencies worldwide prioritize crime prevention and public safety
 
 5. Navigate to the root of the directory where __time_period_crime.ipynb__ is located.
 
-6. Open the __time_period_crime.ipynb__ file in JupyterLab to access the analysis and execute the code.
+6. Open the __time_period_crime.ipynb__ file in Jupyter Lab to access the analysis and execute the code.
 
 ## How to run (Docker Container):
 
@@ -55,17 +55,17 @@ To remove all generated files and clean up the project directory, use the comman
 
 To run tests for functions in data analysis using pytest, follow these steps:
 
-- Open terminal.
-- Navigate to the root directory of your project where the `tests` directory is located.
+1. Open terminal.
+2. Navigate to the root directory of your project where the `tests` directory is located.
 
 Note: The functions will be in the `src` directory e.g. __function_time_period.py__, the tests will be in `test` directory e.g. __tests_time_period.py__.
-- Run the following command:
+3. Run the following command:
     ```bash
     pytest tests/*
     ```
-    This command tells pytest to run all tests in the `tests` directory and its subdirectories.
-- After executing the command, pytest will run all test files (`test_*.py`) within the specified directory.
-- This will output any passed or failed tests.
+    This command tells pytest to run all tests in the `tests` directory and its subdirectories. 
+4. After executing the command, pytest will run all test files (`test_*.py`) within the specified directory.
+5. This will output any passed or failed tests.
 
 
 
