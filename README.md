@@ -59,12 +59,14 @@ To run tests for functions in data analysis using pytest, follow these steps:
 2. Navigate to the root directory of your project where the `tests` directory is located.
 
 Note: The functions will be in the `src` directory e.g. __function_time_period.py__, the tests will be in `test` directory e.g. __tests_time_period.py__.
+
 3. Run the following command:
     ```bash
     pytest tests/*
     ```
-    This command tells pytest to run all tests in the `tests` directory and its subdirectories. 
-4. After executing the command, pytest will run all test files (`test_*.py`) within the specified directory.
+    This command tells pytest to run all tests in the `tests` directory and its subdirectories.
+   
+4. After executing the command, pytest will run all test files (`tests_*.py`) within the specified directory.
 5. This will output any passed or failed tests.
 
 
