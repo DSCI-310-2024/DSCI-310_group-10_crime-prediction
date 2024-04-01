@@ -15,9 +15,18 @@ def analysis(input_path, output_path):
     X = data.drop(columns=['if_crime'])
     y = data['if_crime']
 
-    perform_analysis(X, y, output_path)
+    lr, dummy_results, cv_results_lr = perform_analysis(X, y)
 
-def perform_analysis(X, y, output_path):
+    # Save results
+    dummy_results.to_csv(output_path + '/dummy_results.csv', index=False)
+    cv_results_lr.to_csv(output_path + '/cross_validation_results.csv', index=False)
+
+    # Save coefficients
+    viz_df = saveCoefficients(X, lr, output_path)
+    viz_df.to_csv(output_path + '/crime_coefficients.csv', index=False)
+
+
+def perform_analysis(X, y):
 
     # Perform one-hot encoding with sparse representation
     X_encoded = pd.get_dummies(X, sparse=True)
@@ -36,31 +45,16 @@ def perform_analysis(X, y, output_path):
     # Evaluate the classifier
     
     dummy_results = pd.DataFrame(cross_validate(dummy, X_train, y_train, return_train_score=True)).mean().to_frame().T
-
     dummy_results.columns = ['Fit Time', 'Score Time', 'Test Score', 'Train Score']
-    dummy_results.to_csv(output_path + '/dummy_results.csv', index=False)
 
     cv_results_lr = pd.DataFrame(cross_validate(lr, X_train, y_train, return_train_score=True)).mean().to_frame().T
-
-    #Save cross-validation results
     cv_results_lr.columns = ['Fit Time', 'Score Time', 'Test Score', 'Train Score']
-    cv_results_lr.to_csv(output_path + '/cross_validation_results.csv', index=False)
-
-    #Save coefficients
-    #saveDummyScore(dummy_results, output_path)
-    saveCoefficients(X_train, lr, output_path)
-
-def saveCoefficients(X_train, lr, output_path):
-
+    
     viz_df = pd.DataFrame({"features": X_train.columns, "coefficients": lr.coef_[0]})
 
-    viz_df.to_csv(output_path + '/crime_coefficients.csv', index=False)
 
-# def saveDummyScore(dummy_results, output_path):
+    return lr, dummy_results, cv_results_lr, viz_df
 
-#     viz_dummy = pd.DataFrame({"Dummy Classifier": ["Dummy Score"], "Score": [dummy_results]})
-
-#     viz_dummy.to_csv(output_path + '/dummy_results.csv', index=False)
 
 
 if __name__ == '__main__':

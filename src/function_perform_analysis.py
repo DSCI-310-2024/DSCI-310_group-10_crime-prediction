@@ -4,7 +4,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import cross_validate
 import pandas as pd
 
-def perform_analysis(X, y, output_path):
+def perform_analysis(X, y):
     """
     Perform analysis on the input data.
 
@@ -47,18 +47,13 @@ def perform_analysis(X, y, output_path):
     lr.fit(X_train, y_train)
     
     # Evaluate the classifier
-    
     dummy_results = pd.DataFrame(cross_validate(dummy, X_train, y_train, return_train_score=True)).mean().to_frame().T
-
     dummy_results.columns = ['Fit Time', 'Score Time', 'Test Score', 'Train Score']
-    dummy_results.to_csv(output_path + '/dummy_results.csv', index=False)
 
     cv_results_lr = pd.DataFrame(cross_validate(lr, X_train, y_train, return_train_score=True)).mean().to_frame().T
-
-    #Save cross-validation results
     cv_results_lr.columns = ['Fit Time', 'Score Time', 'Test Score', 'Train Score']
-    cv_results_lr.to_csv(output_path + '/cross_validation_results.csv', index=False)
+    
+    viz_df = pd.DataFrame({"features": X_train.columns, "coefficients": lr.coef_[0]})
 
-    return cv_results_lr
-
+    return lr, dummy_results, cv_results_lr, viz_df
 
