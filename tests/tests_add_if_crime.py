@@ -22,6 +22,7 @@ test_data_boundary = pd.DataFrame({
     "incident_subcategory": ["Robbery - Commercial"]
 })
 
+test_not_dataFrame = "This is not a DataFrame!"
 
 
 # Expected outputs

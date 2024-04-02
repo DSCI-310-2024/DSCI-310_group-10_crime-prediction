@@ -31,7 +31,7 @@ def add_if_crime_feature(data):
     
     """
     if not isinstance(data, pd.DataFrame):
-        raise TypeError(AttributeError)
+        raise TypeError("Input data should be a pandas DataFrame")
     
     criminal_incident = ["Larceny - From Vehicle", "Vandalism", "Larceny Theft - Other", "Motor Vehicle Theft",
                         "Simple Assault", "Drug Violation", "Aggravated Assault", "Fraud", "Theft From Vehicle",
