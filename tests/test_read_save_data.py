@@ -7,8 +7,8 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from src.function_read_save_data import read_save_data
 
 # valid url and output path test
-valid_input_path_1 = '../data/raw/test_raw_data.csv'
-valid_output_path_1 = '../data/raw/read_and_saved_test_raw_data.csv'
+valid_input_path_1 = 'data/raw/test_raw_data.csv'
+valid_output_path_1 = 'data/raw/read_and_saved_test_raw_data.csv'
 
 # invalid url and output path test
 invalid_path_1 = ''
