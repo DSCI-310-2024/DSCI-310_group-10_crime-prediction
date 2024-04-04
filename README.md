@@ -12,11 +12,11 @@ Law enforcement agencies worldwide prioritize crime prevention and public safety
 2. Create and Activate the Conda Environment containing important dependencies:
    `conda env create -f environment.yml`
     `conda activate group10_environment`
-4. Launch Jupyter Lab either through Git or terminal on your computer.
+4. Launch JupyterLab either through Git or terminal on your computer `jupyter lab`.
 
 5. Navigate to the root of the directory where __time_period_crime.ipynb__ is located.
 
-6. Open the __time_period_crime.ipynb__ file in Jupyter Lab to access the analysis and execute the code.
+6. Open the __time_period_crime.ipynb__ file in JupyterLab to access the analysis and execute the code.
 
 ## How to run (Docker Container):
 
@@ -27,38 +27,38 @@ Law enforcement agencies worldwide prioritize crime prevention and public safety
 
 Note: Make sure [Docker Desktop](https://www.docker.com/products/docker-desktop/) is installed and running in the background
 
-4. Run `docker-compose build`, this will create a docker image.
+3. Run `docker-compose build`, this will create a docker image.
 
-5. Run `docker-compose up` and click the last link provided to open Jupyter Lab (or the command used to pull the docker image `docker pull ekenny02/dsci310-group10-project`)
+4. Run `docker-compose up` and copy and paste the last link to your browser to open JupyterLab (or the command used to pull the docker image `docker pull ekenny02/dsci310-group10-project`)
 
-6. Necessary files found within the `work` directory.
+5. Necessary files found within the `work` directory.
 
-7. To shut down and exit the container use `Crtl + c`.
+6. To shut down and exit the container use `Crtl + c`.
 
-8. Removing volumes, images, containers, open another window in terminal and run `docker-compose down --rmi all --volumes --remove-orphans`, or run it in the existing terminal after pressing `Ctrl + c`.
+7. Removing volumes, images, containers, open another window in terminal and run `docker-compose down --rmi all --volumes --remove-orphans`, or run it in the existing terminal after step 6 `Ctrl + c`.
 
 ### Makefile (for creating HTML and PDF Files)
 
 To generate the files in HTML and PDF format, follow these steps:
 
-Once you have started Jupyter Lab using `docker-compose up` and accessed it through the provided link, open a new terminal window in Jupyter Notebook, navigate to the root of the project directory `cd work` where makefile is located and run the following command:
+Once you have started JupyterLab using `docker-compose up` and accessed it through the provided link, open a new terminal window in Jupyter Notebook, navigate to the root of the project directory `cd work` where makefile is located and run the following command:
 ```
 make all
 ```
-This will create __time_period_crime__ as an HTML and PDF file. Additionally, it will generate the necessary plots and graphs.
+This will create __quarto_reports__ as an HTML and PDF file. Additionally, it will generate the necessary plots and graphs.
 
 ### Cleaning Up
 
 To remove all generated files and clean up the project directory, navigate to the root of the projecr directory where makefile is located and run `make clean`. This will target and remove processed data, charts, the final report, and any other generated files.
 
-## Running tests for functions in data analysis
+### Running tests for functions in data analysis
 
 To run tests for functions in data analysis using pytest, follow these steps:
 
 1. Open a new terminal in Jupyter Lab after building the Docker container (instructions on "how to run Docker container" include steps to accessing Jupyter Lab).
 2. Navigate to the root directory of the project, `cd work`, where the tests directory is located.
 
-Note: The functions will be in the `src` directory e.g. __function_time_period.py__, the tests will be in `tests` directory e.g. __test_time_period.py__.
+Note: The functions will be in the [src](https://github.com/DSCI-310-2024/DSCI310-group10-project/tree/main/src) directory e.g. __function_time_period.py__, the tests will be in [tests](https://github.com/DSCI-310-2024/DSCI310-group10-project/tree/main/tests) directory e.g. __test_time_period.py__.
 
 3. Run the following command:
     ```bash
@@ -72,6 +72,8 @@ Note: The functions will be in the `src` directory e.g. __function_time_period.p
 
 
 ## List of Dependencies: 
+Specific denependencies and versions can be found inside [Dockerfile](https://github.com/DSCI-310-2024/DSCI310-group10-project/blob/main/Dockerfile).
+
 - **NumPy**: `pip install numpy`
 - **Pandas**: `pip install pandas`
 - **Matplotlib**: `pip install matplotlib`
