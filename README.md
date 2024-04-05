@@ -41,7 +41,7 @@ Note: Make sure [Docker Desktop](https://www.docker.com/products/docker-desktop/
 
 To generate the files in HTML and PDF format, follow these steps:
 
-Once you have started JupyterLab using `docker-compose up` and accessed it through the provided link, open a new terminal window in Jupyter Notebook, navigate to the root of the project directory `cd work` where makefile is located and run the following command:
+Once you have started JupyterLab using `docker-compose up` and accessed it through the provided link, open a new terminal window in JupyterLab, navigate to the root of the project directory `cd work` where makefile is located and run the following command:
 ```
 make all
 ```
@@ -49,7 +49,7 @@ This will create __quarto_reports__ as an HTML and PDF file. Additionally, it wi
 
 ### Cleaning Up
 
-To remove all generated files and clean up the project directory, navigate to the root of the projecr directory where makefile is located and run `make clean`. This will target and remove processed data, charts, the final report, and any other generated files.
+To remove all generated files and clean up the project directory, navigate to the root of the project directory where makefile is located and run `make clean`. This will target and remove processed data, charts, the final report, and any other generated files.
 
 ### Running tests for functions in data analysis
 
