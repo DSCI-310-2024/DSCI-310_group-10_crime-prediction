@@ -55,7 +55,7 @@ To remove all generated files and clean up the project directory, navigate to th
 
 To run tests for functions in data analysis using pytest, follow these steps:
 
-1. Open a new terminal in Jupyter Lab after building the Docker container (instructions on "how to run Docker container" include steps to accessing Jupyter Lab).
+1. Open a new terminal in Jupyter Lab after building the Docker container ([instructions](https://github.com/DSCI-310-2024/DSCI310-group10-project?tab=readme-ov-file#how-to-run-docker-container) on "how to run Docker container" include steps to accessing Jupyter Lab).
 2. Navigate to the root directory of the project, `cd work`, where the tests directory is located.
 
 Note: The functions will be in the [src](https://github.com/DSCI-310-2024/DSCI310-group10-project/tree/main/src) directory e.g. __function_time_period.py__, the tests will be in [tests](https://github.com/DSCI-310-2024/DSCI310-group10-project/tree/main/tests) directory e.g. __test_time_period.py__.
