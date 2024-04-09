@@ -87,7 +87,6 @@ Specific denependencies and versions can be found inside [Dockerfile](https://gi
 - **Vl Convert**: `pip install vl-convert-python`
 - **Tabulate**: `pip install tabulate`
 
-## Names of Licenses:
-MIT License
-
+## License:
+The Time Period Crime materials here are licensed under the Creative Commons Attribution 2.5 Canada License (CC BY 2.5 CA). If re-using/re-mixing please provide attribution and link to this webpage.
 
