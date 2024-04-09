@@ -8,7 +8,8 @@ Law enforcement agencies worldwide prioritize crime prevention and public safety
 
 The dataset used in this project is filed by by officers or by self-reported by members of the public using [SFPD's Online Reporting System](https://www.sanfranciscopolice.org/get-service/police-reports), and published by the San Francisco Police Department. It was reviewed and approved by a supervising Sergeant or Leieutnant. The dataset is sourced from [here](https://www.sanfranciscopolice.org/). Which is license under [Open Data Commons](https://opendatacommons.org/licenses/pddl/1-0/). The columns category, incident date is the date and time when the incident occured, incident time is the time of the incident ocured. More information of hte column varibales in this [link](https://datasf.gitbook.io/datasf-dataset-explainers/sfpd-incident-report-2018-to-present#field-definitions). Each row of in the dataset corresponds to a specific incident ID, or a incident number. Not all incident number is ossociated to a crime, for example incidents that does not occur in the incident_category column, we do not consider that as a crime in this report(e.g. if a missing child is found). 
 
-# The release of the latest milestone can be found [here](https://github.com/DSCI-310-2024/DSCI310_group10_crime-prediction/releases).
+## Report
+The final report can be found [here](https://dsci-310-2024.github.io/DSCI310_group10_crime-prediction/).
 
 ## How to run (Virtual Environment):
 
