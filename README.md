@@ -95,6 +95,9 @@ Specific denependencies and versions can be found inside [Dockerfile](https://gi
 The Time Period Crime materials here are licensed under the Creative Commons Attribution 2.5 Canada License (CC BY 2.5 CA). If re-using/re-mixing please provide attribution and link to this webpage.
 
 ## References
+San Francisco Police Department. "Police Department Incident Reports: 2018 to Present." San Francisco Governmnet, DataSF: Public-Safety. https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783/about_data.
+
+San Francisco Police Department. "SFPD Incident Report: 2018 to present." San Francisco GOvernment, DataSF: datasf-dataset-explainers. https://datasf.gitbook.io/datasf-dataset-explainers.
 
 
 
