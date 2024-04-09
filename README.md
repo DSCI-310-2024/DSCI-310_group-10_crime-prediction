@@ -2,11 +2,11 @@
 
 Authors: Cassandra Zhang, Ethan Kenny, James He, Pragya Singhal
 
-## Summary:
+## Summary
 
-Law enforcement agencies worldwide prioritize crime prevention and public safety, traditionally relying on experience and intuition for resource allocation. However, advancements in data analysis now enable a more data-driven approach. We will use [San Francisco 2023 data](https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783/about_data) to understand time-related crime patterns that would potentially inform proactive polcing strategies. As a group, we attempt to use logistical regression to predict whether it would be a crime occuring, or not. We will use explanatory variables such as, incident_day_of_week(Monday - Sunday), police_district, time_period. And predict on target if_crime(0 there will not be crime, 1 there will be crime). Our final losgistical regression model predict an test accuracy score of 0.8. Using the dummy classifier, the test accuracy score is 0.58. Comparing these two scores, our model performed better than insanity checks. In our findings that the predictions show similiarty as for the day of the week, Sunday has a lower likelyhood of criminlal incident with a significant negative coefficient. Police districts between Mission and Park have the most highest chance of criminal incident. Time periods during Late Night occurs the most crime as well.
+Law enforcement agencies worldwide prioritize crime prevention and public safety, traditionally relying on experience and intuition for resource allocation. However, advancements in data analysis now enable a more data-driven approach. We will use [San Francisco 2023 data](https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783/about_data) to understand time-related crime patterns that would potentially inform proactive policing strategies. As a group, we attempt to use logistical regression to predict whether it would be a crime occurring, or not. We will use explanatory variables such as incident_day_of_week (Monday - Sunday), police_district, and time_period. And predict on target if_crime (0 there will not be crime, 1 there will be crime). Our final logistical regression model predicts a test accuracy score of 0.8. Using the dummy classifier, the test accuracy score is 0.58. Comparing these two scores, our model performed better than insanity checks. In our findings, the predictions show similarity as for the day of the week, Sunday has a lower likelihood of criminal incident with a significant negative coefficient. Police districts between Mission and Park have the highest chance of criminal incident. Time periods during Late Night occur the most crime as well.
 
-The dataset used in this project is filed by by officers or by self-reported by members of the public using [SFPD's Online Reporting System](https://www.sanfranciscopolice.org/get-service/police-reports), and published by the San Francisco Police Department. It was reviewed and approved by a supervising Sergeant or Leieutnant. The dataset is sourced from [here](https://www.sanfranciscopolice.org/). Which is license under [Open Data Commons](https://opendatacommons.org/licenses/pddl/1-0/). The columns category, incident date is the date and time when the incident occured, incident time is the time of the incident ocured. More information of hte column varibales in this [link](https://datasf.gitbook.io/datasf-dataset-explainers/sfpd-incident-report-2018-to-present#field-definitions). Each row of in the dataset corresponds to a specific incident ID, or a incident number. Not all incident number is ossociated to a crime, for example incidents that does not occur in the incident_category column, we do not consider that as a crime in this report(e.g. if a missing child is found). 
+The dataset used in this project is filed by officers or by self-reported by members of the public using [SFPD's Online Reporting System](https://www.sanfranciscopolice.org/get-service/police-reports), and published by the San Francisco Police Department. It was reviewed and approved by a supervising Sergeant or Lieutenant. The dataset is sourced from [here](https://www.sanfranciscopolice.org/), which is licensed under [Open Data Commons](https://opendatacommons.org/licenses/pddl/1-0/). The columns category, incident date is the date and time when the incident occurred, incident time is the time of the incident occurred. More information on the column variables can be found in this [link](https://datasf.gitbook.io/datasf-dataset-explainers/sfpd-incident-report-2018-to-present#field-definitions). Each row in the dataset corresponds to a specific incident ID or incident number. Not all incident numbers are associated with a crime; for example, incidents that do not occur in the incident_category column, we do not consider that as a crime in this report (e.g., if a missing child is found).
 
 ## Report
 The final report can be found [here](https://dsci-310-2024.github.io/DSCI310_group10_crime-prediction/).
@@ -77,7 +77,7 @@ Note: The functions will be in the [src](https://github.com/DSCI-310-2024/DSCI31
 
 
 
-## List of Dependencies: 
+## List of Dependencies
 Specific denependencies and versions can be found inside [Dockerfile](https://github.com/DSCI-310-2024/DSCI310-group10-project/blob/main/Dockerfile).
 
 - **NumPy**: `pip install numpy`
@@ -91,6 +91,10 @@ Specific denependencies and versions can be found inside [Dockerfile](https://gi
 - **Vl Convert**: `pip install vl-convert-python`
 - **Tabulate**: `pip install tabulate`
 
-## License:
+## License
 The Time Period Crime materials here are licensed under the Creative Commons Attribution 2.5 Canada License (CC BY 2.5 CA). If re-using/re-mixing please provide attribution and link to this webpage.
+
+## References
+
+
 
