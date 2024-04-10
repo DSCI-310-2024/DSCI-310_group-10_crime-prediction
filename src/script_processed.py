@@ -1,3 +1,19 @@
+# author: Group 10
+# date: 2024-04-09
+
+"""
+This script is used for processing the data. It removes unused features and columns with missing data from the dataset. 
+It prepares the dataset for analysis and EDA visualizations.
+The processed data is saved as a CSV file.
+
+Usage: src/script_processed.py --input_path=<input_path> --output_path=<output_path>
+
+Options:
+--input_path=<input_path>      Local file path to the raw data
+--output_path=<output_path>    Local file path where the processed data will be saved
+"""
+
+
 import pandas as pd
 import click
 

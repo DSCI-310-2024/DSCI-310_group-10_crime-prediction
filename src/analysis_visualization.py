@@ -1,3 +1,17 @@
+# author: Group 10
+# date: 2024-04-09
+
+"""
+This script is used for creating visualizations from the saved coefficients of the logistic regression model.
+The visualization is then saved as a PNG file.
+
+Usage: src/analysis_visualization.py --input_path=<input_path> --output_path=<output_path>
+
+Options:
+--input_path=<input_path>      Local file path to the viz_df CSV file
+--output_path=<output_path>    Local file path where the file is to be saved
+"""
+
 import pandas as pd
 import altair as alt
 import click

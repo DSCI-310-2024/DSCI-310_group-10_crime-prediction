@@ -1,3 +1,19 @@
+# author: Group 10
+# date: 2024-04-09
+
+"""
+This script is used for creating visualizations of the initial dataset.
+Two plots are created: a scatterplot and a bar plot.
+The visualizations are saved as PNG files.
+
+Usage: src/eda_visualizations.py --input_path=<input_path> --output_path=<output_path>
+
+Options:
+--input_path=<input_path>      Local file path to the processed data
+--output_path=<output_path>    Local file path where the files are to be saved
+"""
+
+
 import pandas as pd
 import altair as alt
 import click

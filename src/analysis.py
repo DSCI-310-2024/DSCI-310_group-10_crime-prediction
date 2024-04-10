@@ -1,9 +1,22 @@
+# author: Group 10
+# date: 2024-04-09
+
+"""This script is used for performing analysis and outputting data used for analysis visualization. It contains two functions: perform_analysis function creates the model, and analysis function saves the analyzed results.
+
+Usage: src/analysis.py --input_path=<input_path> --output_path=<output_path>
+
+Options:
+--input_path=<input_path>      Local file path to a cleaned and preprocessed data
+--output_path=<output_path>    Local file path where the file wants to be saved
+"""
+
 from sklearn.model_selection import train_test_split, cross_validate
 from sklearn.dummy import DummyClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import cross_validate
 import pandas as pd
 import click
+
 
 @click.command()
 @click.argument('input_path', type=str)
