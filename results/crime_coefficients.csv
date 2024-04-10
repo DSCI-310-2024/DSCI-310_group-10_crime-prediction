@@ -1,24 +1,24 @@
 features,coefficients
-incident_day_of_week_Friday,-0.3022540130437651
-incident_day_of_week_Monday,0.2743999650927196
-incident_day_of_week_Saturday,0.16434165572155243
-incident_day_of_week_Sunday,-0.4050396960271462
-incident_day_of_week_Thursday,-0.2060595264754848
-incident_day_of_week_Tuesday,0.18955890336466136
-incident_day_of_week_Wednesday,0.2876997968173212
-police_district_Bayview,0.12870980904350846
-police_district_Central,0.1138248159077961
-police_district_Ingleside,0.027332744723713994
-police_district_Mission,0.39421498112877584
-police_district_Northern,0.226936455273559
-police_district_Out of SF,-1.884132477611864
-police_district_Park,0.3494551677563824
-police_district_Richmond,0.2518798908944906
-police_district_Southern,0.08418637789658652
-police_district_Taraval,0.2779465957578736
-police_district_Tenderloin,0.03229272467903305
-time_period_Afternoon,-0.24547885468316008
-time_period_Evening,0.017205938559133285
-time_period_Late Night,0.31587646326841134
-time_period_Morning,0.19116623167710284
-time_period_Night,-0.27612269337163386
+incident_day_of_week_Friday,-0.3029876138833524
+incident_day_of_week_Monday,0.2734376775894254
+incident_day_of_week_Saturday,0.16357677260229245
+incident_day_of_week_Sunday,-0.40561490806578965
+incident_day_of_week_Thursday,-0.20658551771647776
+incident_day_of_week_Tuesday,0.1917242856572596
+incident_day_of_week_Wednesday,0.28645530274282593
+police_district_Bayview,0.12821975251755816
+police_district_Central,0.11378503052948306
+police_district_Ingleside,0.026043278189915926
+police_district_Mission,0.3936859254439921
+police_district_Northern,0.22713331849460153
+police_district_Out of SF,-1.8840906936682822
+police_district_Park,0.34915609325010893
+police_district_Richmond,0.2522315141546696
+police_district_Southern,0.08401360247956502
+police_district_Taraval,0.2777095784605517
+police_district_Tenderloin,0.03211859907402102
+time_period_Afternoon,-0.24613729806136816
+time_period_Evening,0.016536167106591792
+time_period_Late Night,0.315403641268569
+time_period_Morning,0.19056572042898404
+time_period_Night,-0.27636223181659053
