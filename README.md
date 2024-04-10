@@ -11,20 +11,7 @@ The dataset used in this project is filed by officers or by self-reported by mem
 ## Report
 The final report can be found [here](https://dsci-310-2024.github.io/DSCI310_group10_crime-prediction/).
 
-## How to run (Virtual Environment):
-
-1. Clone the repository to your local machine using Git:
-`git clone <https://github.com/DSCI-310-2024/DSCI310-group10-project.git>`
-2. Create and Activate the Conda Environment containing important dependencies:
-   `conda env create -f environment.yml`
-    `conda activate group10_environment`
-4. Launch JupyterLab either through Git or terminal on your computer `jupyter lab`.
-
-5. Navigate to the root of the directory where __time_period_crime.ipynb__ is located.
-
-6. Open the __time_period_crime.ipynb__ file in JupyterLab to access the analysis and execute the code.
-
-## How to run (Docker Container):
+## Usage
 
 1. Clone the repository to your local machine using Git:
 `git clone <https://github.com/DSCI-310-2024/DSCI310-group10-project.git>`
