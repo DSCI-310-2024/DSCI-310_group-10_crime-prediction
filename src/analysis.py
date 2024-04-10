@@ -28,7 +28,7 @@ def analysis(input_path, output_path):
     X = data.drop(columns=['if_crime'])
     y = data['if_crime']
 
-    lr, dummy_results, cv_results_lr = perform_analysis(X, y)
+    lr, dummy_results, cv_results_lr, viz_df = perform_analysis(X, y)
 
     # Save results
     dummy_results.to_csv(output_path + '/dummy_results.csv', index=False)
