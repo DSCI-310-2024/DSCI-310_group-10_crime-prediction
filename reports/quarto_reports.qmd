@@ -1,6 +1,6 @@
 ---
 title: "Predict and Classify the Appearance of Criminal Incidents based on historical incident reports"
-author: "Group10"
+author: "Authors: Cassandra Zhang, Ethan Kenny, James He, Pragya Singhal"
 format: 
     html:
         toc: true
