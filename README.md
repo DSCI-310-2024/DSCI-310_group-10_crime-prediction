@@ -14,7 +14,7 @@ The final report can be found [here](https://dsci-310-2024.github.io/DSCI310_gro
 ## Usage
 
 1. Clone the repository to your local machine using Git:
-`git clone <https://github.com/DSCI-310-2024/DSCI310-group10-project.git>`
+`git clone git@github.com:DSCI-310-2024/DSCI-310-group-10_crime-prediction.git`
 
 2. Open terminal and navigate to DSCI310-group10-project directory.
 
