@@ -1,4 +1,4 @@
-# Predict and Classify the appearance of criminal incidents based on historical incident reports (specifically 2023)
+# Predict the appearance of criminal incidents based on historical incident reports (specifically 2023)
 
 Authors: Cassandra Zhang, Ethan Kenny, James He, Pragya Singhal
 
@@ -9,14 +9,14 @@ Law enforcement agencies worldwide prioritize crime prevention and public safety
 The dataset used in this project is filed by officers or by self-reported by members of the public using [SFPD's Online Reporting System](https://www.sanfranciscopolice.org/get-service/police-reports), and published by the San Francisco Police Department. It was reviewed and approved by a supervising Sergeant or Lieutenant. The dataset is sourced from [here](https://www.sanfranciscopolice.org/), which is licensed under [Open Data Commons](https://opendatacommons.org/licenses/pddl/1-0/). The columns category, incident date is the date and time when the incident occurred, incident time is the time of the incident occurred. More information on the column variables can be found in this [link](https://datasf.gitbook.io/datasf-dataset-explainers/sfpd-incident-report-2018-to-present#field-definitions). Each row in the dataset corresponds to a specific incident ID or incident number. Not all incident numbers are associated with a crime; for example, incidents that do not occur in the incident_category column, we do not consider that as a crime in this report (e.g., if a missing child is found).
 
 ## Report
-The final report can be found [here](https://dsci-310-2024.github.io/DSCI310_group10_crime-prediction/).
+The final report can be found [here](https://github.com/DSCI-310-2024/DSCI-310_group-10_crime-prediction/blob/main/reports/quarto_reports.qmd).
 
 ## Usage
 
 1. Clone the repository to your local machine using Git:
-`git clone git@github.com:DSCI-310-2024/DSCI-310-group-10_crime-prediction.git`
+`git clone https://github.com/DSCI-310-2024/DSCI-310_group-10_crime-prediction.git`
 
-2. Open terminal and navigate to DSCI310-group10-project directory.
+2. Open terminal and navigate to DSCI-310_group-10_crime-prediction directory.
 
 Note: Make sure [Docker Desktop](https://www.docker.com/products/docker-desktop/) is installed and running in the background
 
@@ -48,10 +48,10 @@ To remove all generated files and clean up the project directory, navigate to th
 
 To run tests for functions in data analysis using pytest, follow these steps:
 
-1. Open a new terminal in Jupyter Lab after building the Docker container ([instructions](https://github.com/DSCI-310-2024/DSCI310-group10-project?tab=readme-ov-file#how-to-run-docker-container) on "how to run Docker container" include steps to accessing Jupyter Lab).
+1. Open a new terminal in Jupyter Lab after building the Docker container ([instructions](https://github.com/DSCI-310-2024/DSCI-310_group-10_crime-prediction/blob/main/reports/quarto_reports.qmd) on "Usage" include steps to accessing Jupyter Lab).
 2. Navigate to the root directory of the project, `cd work`, where the tests directory is located.
 
-Note: The functions will be in the [src](https://github.com/DSCI-310-2024/DSCI310-group10-project/tree/main/src) directory e.g. __function_time_period.py__, the tests will be in [tests](https://github.com/DSCI-310-2024/DSCI310-group10-project/tree/main/tests) directory e.g. __test_time_period.py__.
+Note: The functions will be in the [src](https://github.com/DSCI-310-2024/DSCI-310_group-10_crime-prediction/tree/main/src) directory e.g. __function_time_period.py__, the tests will be in [tests]([https://github.com/DSCI-310-2024/DSCI-310_group-10_crime-prediction/tree/main/tests) directory e.g. __test_time_period.py__.
 
 3. Run the following command:
     ```bash
@@ -77,7 +77,7 @@ Note: The functions will be in the [src](https://github.com/DSCI-310-2024/DSCI31
 | vl-convert-python | 1.3.0     |
 | tabulate          | 0.9.0     |
 
-If this information is outdated, please visit [Dockerfile](https://github.com/DSCI-310-2024/DSCI310-group10-project/blob/main/Dockerfile) for the most current dependencies.
+If this information is outdated, please visit [Dockerfile](https://github.com/DSCI-310-2024/DSCI-310_group-10_crime-prediction/blob/main/Dockerfile) for the most current dependencies.
 
 
 ## License
