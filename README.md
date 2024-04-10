@@ -63,20 +63,22 @@ Note: The functions will be in the [src](https://github.com/DSCI-310-2024/DSCI31
 5. This will output any passed or failed tests.
 
 
+## Dependencies
 
-## List of Dependencies
-Specific denependencies and versions can be found inside [Dockerfile](https://github.com/DSCI-310-2024/DSCI310-group10-project/blob/main/Dockerfile).
+| Package           | Version   |
+|-------------------|-----------|
+| altair            | 5.2.0     |
+| altair_saver      | 0.1.0     |
+| click             | 8.1.7     |
+| numpy             | 1.26.4    |
+| pandas            | 2.2.1     |
+| scikit-learn      | 1.4.1.post1 |
+| pytest            | 8.1.1     |
+| vl-convert-python | 1.3.0     |
+| tabulate          | 0.9.0     |
 
-- **NumPy**: `pip install numpy`
-- **Pandas**: `pip install pandas`
-- **Matplotlib**: `pip install matplotlib`
-- **Scikit-learn**: `pip install scikit-learn`
-- **Altair**: `pip install altair`
-- **Altair Saver**: `pip install altair_saver`
-- **Click**: `pip install click`
-- **Pytest**: `pip install pytest`
-- **Vl Convert**: `pip install vl-convert-python`
-- **Tabulate**: `pip install tabulate`
+If this information is outdated, please visit [Dockerfile](https://github.com/DSCI-310-2024/DSCI310-group10-project/blob/main/Dockerfile) for the most current dependencies.
+
 
 ## License
 The Time Period Crime materials here are licensed under the Creative Commons Attribution 2.5 Canada License (CC BY 2.5 CA). If re-using/re-mixing please provide attribution and link to this webpage.
