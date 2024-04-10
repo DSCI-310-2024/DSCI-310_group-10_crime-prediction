@@ -5,11 +5,10 @@ channels:
   - pypi
 dependencies:
   - numpy=1.22.*
-  - pandas=1.3.*
-  - scikit-learn=0.24.*
   - altair=4.1.*
-  - altair_saver=0.5.*
   - python=3.9.*
   - pytest = 8.1.1 *
+  - pip:
+    - pycrimeprediction==0.1.0
 
 

@@ -8,4 +8,6 @@ RUN conda install -y altair=5.2.0 \
     scikit-learn=1.4.1.post1 \
     pytest=8.1.1 \
     vl-convert-python=1.3.0 \
-    tabulate=0.9.0
+    tabulate=0.9.0 
+
+RUN pip install pycrimeprediction==0.1.0
