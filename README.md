@@ -34,7 +34,13 @@ Note: Make sure [Docker Desktop](https://www.docker.com/products/docker-desktop/
 
 To generate the files in HTML and PDF format, follow these steps:
 
-Once you have started JupyterLab using `docker-compose up` and accessed it through the provided link, open a new terminal window in JupyterLab, navigate to the root of the project directory `cd work` where makefile is located and run the following command:
+Once you have started JupyterLab using `docker-compose up` and accessed it through the provided link, open a new terminal window in JupyterLab, navigate to the root of the project directory `cd work` where makefile is located and run the following commands:
+
+1. Run the following in order to remove the created files and reports:
+```
+make clean
+```
+2. Now, run the following command in order to produce new files: 
 ```
 make all
 ```
