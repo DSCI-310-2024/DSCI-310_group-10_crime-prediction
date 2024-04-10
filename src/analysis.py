@@ -35,7 +35,6 @@ def analysis(input_path, output_path):
     cv_results_lr.to_csv(output_path + '/cross_validation_results.csv', index=False)
 
     # Save coefficients
-    viz_df = saveCoefficients(X, lr, output_path)
     viz_df.to_csv(output_path + '/crime_coefficients.csv', index=False)
 
 
