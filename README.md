@@ -2,7 +2,7 @@
 
 Authors: Cassandra Zhang, Ethan Kenny, James He, Pragya Singhal
 
-## Summary
+## About
 
 Law enforcement agencies worldwide prioritize crime prevention and public safety, traditionally relying on experience and intuition for resource allocation. However, advancements in data analysis now enable a more data-driven approach. We will use [San Francisco 2023 data](https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783/about_data) to understand time-related crime patterns that would potentially inform proactive policing strategies. As a group, we attempt to use logistical regression to predict whether it would be a crime occurring, or not. We will use explanatory variables such as incident_day_of_week (Monday - Sunday), police_district, and time_period. And predict on target if_crime (0 there will not be crime, 1 there will be crime). Our final logistical regression model predicts a test accuracy score of 0.8. Using the dummy classifier, the test accuracy score is 0.58. Comparing these two scores, our model performed better than insanity checks. In our findings, the predictions show similarity as for the day of the week, Sunday has a lower likelihood of criminal incident with a significant negative coefficient. Police districts between Mission and Park have the highest chance of criminal incident. Time periods during Late Night occur the most crime as well.
 
