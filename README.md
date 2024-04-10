@@ -46,29 +46,6 @@ make all
 ```
 This will create __quarto_reports__ as an HTML and PDF file. Additionally, it will generate the necessary plots and graphs.
 
-### Cleaning Up
-
-To remove all generated files and clean up the project directory, navigate to the root of the project directory where makefile is located and run `make clean`. This will target and remove processed data, charts, the final report, and any other generated files.
-
-### Running tests for functions in data analysis
-
-To run tests for functions in data analysis using pytest, follow these steps:
-
-1. Open a new terminal in Jupyter Lab after building the Docker container ([instructions](https://github.com/DSCI-310-2024/DSCI-310_group-10_crime-prediction/blob/main/reports/quarto_reports.qmd) on "Usage" include steps to accessing Jupyter Lab).
-2. Navigate to the root directory of the project, `cd work`, where the tests directory is located.
-
-Note: The functions will be in the [src](https://github.com/DSCI-310-2024/DSCI-310_group-10_crime-prediction/tree/main/src) directory e.g. __function_time_period.py__, the tests will be in [tests]([https://github.com/DSCI-310-2024/DSCI-310_group-10_crime-prediction/tree/main/tests) directory e.g. __test_time_period.py__.
-
-3. Run the following command:
-    ```bash
-    pytest tests/*
-    ```
-    This command tells pytest to run all tests in the `tests` directory and its subdirectories.
-   
-4. After executing the command, pytest will run all test files (`test_*.py`) within the specified directory.
-5. This will output any passed or failed tests.
-
-
 ## Dependencies
 
 | Package           | Version   |
