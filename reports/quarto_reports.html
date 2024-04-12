@@ -3192,6 +3192,7 @@ Figure 2: Incidents Records by Day &amp; Time Period
 </section>
 <section id="perform-an-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="perform-an-analysis">Perform an Analysis</h2>
+<p>In order to carry out our analysis, we will be using logistic regression, since the response variable ‘if_crime’ is a binary variable taking the values 0 (NO CRIME) or 1 (CRIME). The following analysis will utilise logistic regression to predict the likelihood of the criminal incidents based on our aforementioned explanatory variables (time period, day of week, and police district). In order to ensure that this is a satisfactory model, we will also be training our data on a baseline model and use it on our test data to compare them.</p>
 <section id="dummy-classifier" class="level3">
 <h3 class="anchored" data-anchor-id="dummy-classifier">Dummy Classifier:</h3>
 <div class="cell" data-execution_count="2">
@@ -3397,6 +3398,14 @@ Figure 3: Coefficents of Logistic Regression Model
 <p>Days of the Week: From the <a href="#fig-coefficents-lr-plot" class="quarto-xref">Figure 3</a>, Tuesday and Wednesday show positive coefficients, suggesting a slight increase in the likelihood of incidents on these days. Conversely, Sunday exhibits a significantly negative coefficient, indicating a lower likelihood of incidents.</p>
 <p>Police Districts: The ‘Mission’ and ‘Park’ districts display higher likelihoods of incidents with positive coefficients. In contrast, “Out of San Francisco” has a strongly negative coefficient, as expected due to its location outside the city’s jurisdiction.</p>
 <p>Time Periods: The “Late Night” period has a positive coefficient, suggesting a higher likelihood of incidents during these hours. Conversely, “Afternoon” and “Night” have negative coefficients, indicating a lower likelihood of incidents.</p>
+</section>
+<section id="limitations" class="level3">
+<h3 class="anchored" data-anchor-id="limitations">Limitations</h3>
+<p>There are a number of limitations that need to be considered as part of the results of this analysis. For example, the analysis may not account for all external factors that could influence crime rates, such as socio-economic conditions, cultural factors, or changes in policing strategies over time.</p>
+</section>
+<section id="assumptions" class="level3">
+<h3 class="anchored" data-anchor-id="assumptions">Assumptions</h3>
+<p>For simplicity, the analysis relies on the assumption that the data is accurate and representative of real life crime incidents since any bias could lead to skewed and inaccurate results. Moreover, the analysis assumes that the chosen model is appropriate for the dataset and the research question chosen.</p>
 </section>
 <section id="were-these-findings-expected" class="level3">
 <h3 class="anchored" data-anchor-id="were-these-findings-expected">Were These Findings Expected?</h3>
